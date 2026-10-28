@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Hanken+Grotesk:ital,wght@0,300..700;1,300..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-primary":"#ffffff","surface-variant":"#e2e3e0","primary-container":"#1c1b1b","on-tertiary-fixed-variant":"#474743","on-tertiary-container":"#85847f","tertiary":"#000000","on-tertiary-fixed":"#1b1c18","secondary-fixed-dim":"#e3c193","on-primary-fixed-variant":"#474746","error-container":"#ffdad6","on-primary-fixed":"#1c1b1b","tertiary-fixed-dim":"#c8c6c1","on-primary-container":"#858383","on-error-container":"#93000a","error":"#ba1a1a","surface-container-high":"#e8e8e5","secondary":"#745a34","outline":"#747878","secondary-fixed":"#ffddb1","surface-bright":"#f9f9f6","on-secondary-fixed":"#291800","surface-container-highest":"#e2e3e0","on-tertiary":"#ffffff","primary-fixed":"#e5e2e1","tertiary-container":"#1b1c18","tertiary-fixed":"#e4e2dc","primary-fixed-dim":"#c8c6c5","primary":"#000000","on-secondary-fixed-variant":"#5a431f","surface":"#f9f9f6","surface-container-lowest":"#ffffff","on-surface":"#1a1c1b","surface-container-low":"#f4f4f1","secondary-container":"#fedaaa","on-secondary-container":"#795e38","surface-tint":"#5f5e5e","on-secondary":"#ffffff","inverse-primary":"#c8c6c5","outline-variant":"#c4c7c7","surface-container":"#eeeeeb","background":"#f9f9f6","on-error":"#ffffff","on-surface-variant":"#444748","surface-dim":"#dadad7","on-background":"#1a1c1b","inverse-surface":"#2f312f","inverse-on-surface":"#f1f1ee"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","margin":"4rem","gutter":"1.5rem","space-sm":"0.5rem","space-md":"1rem","space-lg":"2rem","gutter-mobile":"1rem","space-xl":"4rem","margin-mobile":"1.25rem"},"fontFamily":{"display-lg":["EB Garamond"],"headline-sm":["EB Garamond"],"body-md":["Hanken Grotesk"],"body-lg":["Hanken Grotesk"],"label-tabular":["Hanken Grotesk"],"body-sm":["Hanken Grotesk"],"title-lg":["EB Garamond"],"display-lg-mobile":["EB Garamond"],"label-eyebrow":["Hanken Grotesk"],"display-md-mobile":["EB Garamond"],"display-md":["EB Garamond"]},"fontSize":{"display-lg":["3.5rem",{"lineHeight":"4rem","letterSpacing":"-0.015em","fontWeight":"400"}],"headline-sm":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"0em","fontWeight":"400"}],"body-md":["0.9375rem",{"lineHeight":"1.5rem","letterSpacing":"0em","fontWeight":"400"}],"body-lg":["1.0625rem",{"lineHeight":"1.75rem","letterSpacing":"-0.005em","fontWeight":"400"}],"label-tabular":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.02em","fontWeight":"400"}],"body-sm":["0.8125rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"400"}],"title-lg":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"0.01em","fontWeight":"400"}],"display-lg-mobile":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.01em","fontWeight":"400"}],"label-eyebrow":["0.6875rem",{"lineHeight":"1rem","letterSpacing":"0.2em","fontWeight":"500"}],"display-md-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"0em","fontWeight":"400"}],"display-md":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.01em","fontWeight":"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-80 bg-surface-container-lowest z-50 flex flex-col justify-between border-r border-surface-container"><div class="flex flex-col"><div class="h-20 px-space-lg flex items-center gap-space-sm border-b border-surface-container bg-surface-container-lowest"><img alt="Brand logo. - Primary color: #1a1a1a
+- Font: ebGaramond
+- Mode: light
+- Roundness: rounded-lg
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X3kTNj1h3qzEe6SluENtp9S59IjKiEXr3zoP5AFxEJQKwa39q2hn3JzRrJS-pemKnGjTkxZsW93YhV2NCp_upX4NKC6uiNpMedhPynbDQv4ev3CskqYpbmiMmUXNtP_qm3KCZ0xaHqN14hHREhgGJVn2tm0RAZzEAgFDpn_rVbFXGlI63W3ifw2uwZFZk2KHcoY1-t8VaPUt7UyZJ7SqpIkoAdLv6sJxRyGTkBfPQ5K5jnI5Pb5XO4HQ"/><div class="flex flex-col"><span class="font-title-lg text-title-lg tracking-[0.2em] text-primary uppercase leading-none">TÈSSILE</span><span class="font-label-eyebrow text-label-eyebrow tracking-[0.25em] text-secondary uppercase mt-0.5">Atelier Privé</span></div></div><div class="p-space-lg border-b border-surface-container bg-surface-container-low"><div class="flex items-center justify-between mb-space-xs"><span class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant">Client Dossier</span><span class="font-label-tabular text-label-tabular text-secondary uppercase">#882</span></div><h2 class="font-title-lg text-title-lg text-primary tracking-normal leading-tight">Lord Julian Vance</h2><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Patron d'Atelier • Active Order Guild</p></div><nav class="flex flex-col py-space-md px-space-sm gap-0.5" data-active-classes="bg-primary text-on-primary"><a class="flex items-center justify-between px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="overview-and-ledger" href="#"><span class="font-body-md text-body-md tracking-normal">Overview &amp; Ledger</span><span class="font-label-tabular text-label-tabular text-on-surface-variant">01</span></a><a class="flex items-center justify-between px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="orders-and-cuts" href="#"><span class="font-body-md text-body-md tracking-normal">Orders &amp; Cuts</span><span class="font-label-tabular text-label-tabular text-on-surface-variant">02</span></a><a class="flex items-center justify-between px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="saved-addresses-and-directives" href="#"><span class="font-body-md text-body-md tracking-normal">Saved Addresses &amp; Directives</span><span class="font-label-tabular text-label-tabular text-on-surface-variant">03</span></a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-primary text-on-primary" data-path="archival-swatches-and-wishlist" href="#"><span class="font-body-md text-body-md tracking-normal">Archival Swatches &amp; Wishlist</span><span class="font-label-tabular text-label-tabular text-on-surface-variant">04</span></a><a class="flex items-center justify-between px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="client-profile-and-security" href="#"><span class="font-body-md text-body-md tracking-normal">Client Profile &amp; Security</span><span class="font-label-tabular text-label-tabular text-on-surface-variant">05</span></a><a class="flex items-center justify-between px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="tailor-preferences-and-guild" href="#"><span class="font-body-md text-body-md tracking-normal">Tailor Preferences &amp; Guild</span><span class="font-label-tabular text-label-tabular text-on-surface-variant">06</span></a></nav></div><div class="p-space-lg flex flex-col gap-space-md"><div class="p-space-md bg-surface-container-low border border-surface-container flex flex-col"><div class="flex items-center justify-between mb-space-xs"><span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary">Clothier Concierge</span><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span></div><p class="font-title-lg text-title-lg text-primary">Matteo Bellini</p><p class="font-body-sm text-body-sm text-on-surface-variant">Milan Cutting Lead</p><div class="mt-space-md pt-space-sm border-t border-surface-container flex flex-col gap-1"><span class="font-label-tabular text-label-tabular text-on-surface-variant">Direct Desk: +39 02 8901 442</span><span class="font-label-eyebrow text-label-eyebrow uppercase text-primary mt-1">Desk Inquiry Active</span></div></div><div class="flex items-center justify-between pt-space-xs border-t border-surface-container"><a class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant hover:text-primary transition-colors tracking-[0.2em]" data-path="sign-out" href="#">Sign Out</a><span class="font-label-tabular text-label-tabular text-on-surface-variant">V 4.12</span></div></div></aside><div class="pl-80"><header class="fixed top-0 left-80 right-0 h-20 bg-surface/90 backdrop-blur-xl z-40 border-b border-surface-container"><div class="w-full h-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-lg"><nav class="flex items-center gap-space-lg" data-active-classes="text-primary font-medium"><a class="font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors" data-path="catalog" href="#">Archival Catalog</a><a class="font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors" data-path="swatches" href="#">Textile Swatches</a><a class="font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors" data-path="cart" href="#">Bespeaking Cart (2)</a></nav></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm py-1 px-space-md border border-surface-container bg-surface-container-lowest"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-eyebrow text-label-eyebrow uppercase text-primary tracking-[0.15em]">Patron Dossier #882</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-[calc(100vh-5rem)] px-space-lg py-space-xl"><div class="flex flex-col w-full">
+<!-- Archival Dossier Header -->
+<div class="flex flex-col gap-space-sm mb-space-xl">
+<div class="flex items-center gap-space-sm">
+<span class="w-1.5 h-1.5 bg-secondary"></span>
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary tracking-[0.25em]">Curated Specimens &amp; Archived Weaves</span>
+<span class="text-surface-variant font-label-tabular text-body-sm">/</span>
+<span class="font-label-tabular text-label-tabular text-on-surface-variant uppercase">Portfolio Dossier #882</span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg pt-space-xs">
+<div>
+<h1 class="font-display-md text-display-md text-primary tracking-tight">Archival Swatches &amp; Wishlist</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-space-xs leading-relaxed">
+          Curate personal cloth candidate selections for upcoming seasonal wardrobes, bespoke tailoring projects, and tactile swatch ring references.
+        </p>
+</div>
+<!-- Live Dossier Counter Stat -->
+<div class="flex items-center gap-space-md self-start lg:self-auto bg-surface-container-lowest px-space-md py-space-sm border border-surface-container shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">inventory_2</span>
+<div class="flex flex-col">
+<span class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase">Archival Yardage Potential</span>
+<span class="font-label-tabular text-label-tabular text-primary font-medium">139 Meters Sourced Across 4 Looms</span>
+</div>
+</div>
+</div>
+<!-- Filter Tabs & Sort Directives -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mt-space-lg pt-space-md border-t border-surface-container">
+<div class="flex items-center flex-wrap gap-1 bg-surface-container-low p-1 border border-surface-container">
+<button class="px-space-md py-1.5 text-on-primary bg-primary font-label-eyebrow text-label-eyebrow uppercase tracking-[0.15em] transition-colors" type="button">
+          All Saved (7)
+        </button>
+<button class="px-space-md py-1.5 text-on-surface-variant hover:text-primary hover:bg-surface font-label-eyebrow text-label-eyebrow uppercase tracking-[0.15em] transition-colors" type="button">
+          Textiles &amp; Yardage (4)
+        </button>
+<button class="px-space-md py-1.5 text-on-surface-variant hover:text-primary hover:bg-surface font-label-eyebrow text-label-eyebrow uppercase tracking-[0.15em] transition-colors" type="button">
+          Haberdashery &amp; Hardware (2)
+        </button>
+<button class="px-space-md py-1.5 text-on-surface-variant hover:text-primary hover:bg-surface font-label-eyebrow text-label-eyebrow uppercase tracking-[0.15em] transition-colors" type="button">
+          Pattern Dossiers (1)
+        </button>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant">Classify By:</span>
+<div class="relative inline-block">
+<select class="appearance-none bg-surface-container-lowest border border-surface-container py-1.5 pl-space-md pr-space-xl font-label-tabular text-label-tabular text-primary cursor-pointer focus:border-secondary focus:outline-none">
+<option>Date Added: Newest First</option>
+<option>Weave Weight: Heavy to Fine</option>
+<option>Bolt Registry: Remaining Yardage</option>
+<option>Valuation: Ascending</option>
+</select>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px] absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Physical Folio Swatch Ring Quick-Order Banner -->
+<div class="relative w-full bg-surface-container-lowest border border-surface-container p-space-lg mb-space-xl overflow-hidden shadow-sm">
+<div class="absolute -right-12 -bottom-12 w-48 h-48 bg-secondary/5 rounded-full pointer-events-none"></div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-lg relative z-10">
+<div class="flex items-start gap-space-md max-w-3xl">
+<div class="w-12 h-12 bg-surface-container-low border border-surface-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[24px]">architecture</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm mb-1">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary tracking-[0.2em]">Tactile Physical Reference</span>
+<span class="w-1 h-1 bg-surface-variant rounded-full"></span>
+<span class="font-label-tabular text-body-sm text-on-surface-variant">Milano Cutting Room Preparation</span>
+</div>
+<h2 class="font-title-lg text-title-lg text-primary">Transform Your Archival Swatches into a Physical Folio</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            You currently hold <strong class="text-primary font-medium">4 curated cloth specimens</strong> in this dossier. Request a bespoke 10×10 cm brass-pinned swatch ring bound with natural bookbinding thread for <span class="font-label-tabular text-primary font-medium">€18.00</span>. The complete sum is credited toward your subsequent bolt commission.
+          </p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm shrink-0">
+<button class="px-space-lg py-3 bg-primary text-on-primary font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] hover:bg-neutral-800 transition-colors flex items-center justify-center gap-space-sm text-center" type="button">
+<span>Request Swatch Ring</span>
+<span class="font-label-tabular text-label-tabular text-surface-variant">| €18.00</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Specimen Wishlist Grid (3-Column Architectural Ledger) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg mb-space-xl">
+<!-- Item 1: Washed Belgian Linen Slub -->
+<article class="flex flex-col bg-surface-container-lowest border border-surface-container group hover:border-on-surface-variant transition-colors">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]" data-alt="Macro close-up photograph of luxurious washed Belgian oatmeal linen textile weave, visible slub texture, natural raw flax fibers under soft warm diffused daylight studio illumination, editorial drape, artisanal sartorial background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1Qnnr20DTaV8g2HRQHS2R1yUKvoVFhAeuPAuBVGqNv6mr8qsqCygdD0wKcQHJPji1a06WM3soDF4GB24ZIyTzne3FEsIRpI4T31jjlQn1uw51mYWg8Vp94Vw0jiy0DGs-B3vLuIU6QUCQFMAw9E91aDBOjV6reM0n4xtxM4HmZoXkkjtqLo3MOFEd5L52Lp34Q3KcvadJlPMQvy50jKKzgq43kzxfYAIWzClYfURaf-0D1VfB8kWu"/>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/95 backdrop-blur-sm px-2.5 py-1 border border-surface-container">
+<span class="font-label-tabular text-body-sm text-primary uppercase tracking-wide">Specimen #LN-210</span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 bg-surface-container-lowest/95 backdrop-blur-sm border border-surface-container flex items-center justify-center text-on-surface-variant hover:text-error hover:border-error transition-colors" title="Remove from wishlist" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/95 backdrop-blur-sm px-3 py-1.5 border border-surface-container flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase">Bolt Inventory</span>
+<span class="font-label-tabular text-body-sm text-primary">42m Remaining</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center justify-between gap-space-xs mb-1">
+<span class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase">Flanders Flax • Plain Weave</span>
+<span class="font-label-tabular text-body-sm text-secondary font-medium">In Stock</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary leading-tight">Washed Belgian Linen Slub</h3>
+<div class="mt-space-sm pt-space-xs border-t border-surface-container flex flex-col gap-1 text-on-surface-variant">
+<div class="flex items-center justify-between font-label-tabular text-body-sm">
+<span>Metric Weight / Width</span>
+<span class="text-primary">210 gsm • 145 cm</span>
+</div>
+<div class="flex items-center justify-between font-label-tabular text-body-sm">
+<span>Loom Provenance</span>
+<span class="text-primary">Kortrijk Mills, Belgium</span>
+</div>
+<div class="flex items-center justify-between font-label-tabular text-body-sm">
+<span>Bolt Unit Valuation</span>
+<span class="text-primary font-medium">€34.00 / meter</span>
+</div>
+</div>
+<!-- Tailor Atelier Note Box -->
+<div class="mt-space-md p-space-sm bg-surface-container-low border border-surface-container flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase tracking-widest">Sartorial Directive</span>
+<span class="material-symbols-outlined text-secondary text-[14px]">edit_note</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+              “Target: Summer unstructured double-breasted jacket for cliente”
+            </p>
+</div>
+</div>
+<!-- Action Haired Cluster -->
+<div class="flex flex-col gap-1.5 pt-space-xs border-t border-surface-container">
+<div class="grid grid-cols-2 gap-1.5">
+<button class="w-full py-2 bg-primary text-on-primary font-label-eyebrow text-label-eyebrow uppercase tracking-[0.15em] hover:bg-neutral-800 transition-colors text-center" type="button">
+              Add Cut
+            </button>
+<button class="w-full py-2 bg-surface-container-low border border-surface-container text-primary font-label-eyebrow text-label-eyebrow uppercase tracking-[0.1em] hover:bg-surface-variant transition-colors text-center" type="button">
+              Swatch (€3.50)
+            </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Item 2: Biella Super 120s Wool Flannel -->
+<article class="flex flex-col bg-surface-container-lowest border border-surface-container group hover:border-on-surface-variant transition-colors">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]" data-alt="Detailed macro view of charcoal melange fine worsted wool flannel twill weave, subtle heathered grey woolen fibers, soft brushed nap, luxury Italian bespoke drapery cloth, soft angled lighting, premium sartorial studio display." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy6T8qh20scTZ-tkZNE8WFjvBHGm3expoLlAZRoZDV-D3gOpC7lScrJP6FrE9brdbkYI46Hh7vvu9Levqcy27qHEhQmItanLOlJXetHTExQZc8YJQPNAXlXA7D677xMIxWRVvKyj8znaasW5_W8iphuP1ay7ARL30eC2jL8tbkNwnhEGSr1ocPMt9GyxU5mMWZDtQnlEw3vrf_AKLwRJlz6V1lFIzQasTW6ZvoO-XYMRKEP40XVemX"/>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/95 backdrop-blur-sm px-2.5 py-1 border border-surface-container">
+<span class="font-label-tabular text-body-sm text-primary uppercase tracking-wide">Specimen #BL-120</span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 bg-surface-container-lowest/95 backdrop-blur-sm border border-surface-container flex items-center justify-center text-on-surface-variant hover:text-error hover:border-error transition-colors" title="Remove from wishlist" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/95 backdrop-blur-sm px-3 py-1.5 border border-surface-container flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase">Bolt Inventory</span>
+<span class="font-label-tabular text-body-sm text-primary">18m Remaining</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center justify-between gap-space-xs mb-1">
+<span class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase">Piedmont Merino • Worsted Twill</span>
+<span class="font-label-tabular text-body-sm text-secondary font-medium">In Stock</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary leading-tight">Biella Super 120s Wool Flannel — Charcoal Melange</h3>
+<div class="mt-space-sm pt-space-xs border-t border-surface-container flex flex-col gap-1 text-on-surface-variant">
+<div class="flex items-center justify-between font-label-tabular text-body-sm">
+<span>Metric Weight / Width</span>
+<span class="text-primary">290 gsm • 152 cm</span>
+</div>
+<div class="flex items-center justify-between font-label-tabular text-body-sm">
+<span>Loom Provenance</span>
+<span class="text-primary">Lanificio Biellese, Piemonte</span>
+</div>
+<div class="flex items-center justify-between font-label-tabular text-body-sm">
+<span>Bolt Unit Valuation</span>
+<span class="text-primary font-medium">€68.00 / meter</span>
+</div>
+</div>
+<!-- Tailor Atelier Note Box -->
+<div class="mt-space-md p-space-sm bg-surface-container-low border border-surface-container flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase tracking-widest">Sartorial Directive</span>
+<span class="material-symbols-outlined text-secondary text-[14px]">edit_note</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+              “Pair with horn buttons ref #HRN-32L for full winter three-piece suit”
+            </p>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 pt-space-xs border-t border-surface-container">
+<div class="grid grid-cols-2 gap-1.5">
+<button class="w-full py-2 bg-primary text-on-primary font-label-eyebrow text-label-eyebrow uppercase tracking-[0.15em] hover:bg-neutral-800 transition-colors text-center" type="button">
+              Add Cut
+            </button>
+<button class="w-full py-2 bg-surface-container-low border border-surface-container text-primary font-label-eyebrow text-label-eyebrow uppercase tracking-[0.1em] hover:bg-surface-variant transition-colors text-center" type="button">
+              Swatch (€3.50)
+            </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Item 3: Japanese Selvedge Denim Drill -->
+<article class="flex flex-col bg-surface-container-lowest border border-surface-container group hover:border-on-surface-variant transition-colors">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]" data-alt="Macro textural photograph of raw deep indigo Japanese selvedge denim cloth showing crisp 3x1 twill ridges and distinctive classic red ticker edge selvedge line, Okayama shuttle loom weave, minimal clean studio framing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPR7p9MlBMmqQ2U8RBHLvjWktBVbVEoqSaL_dDzYRpL-1zNNUGm5RFam8TKsQ0z9AvO1sUSd1vLbRcjmZkpPOg36nuwlqfskA-d0Jh2-MTVYfqzXgWpKPc2dQ1gjVMod5Rg1esBcGk931Ajs9fnpTqqjelRsurCMhOO_otHA0RuK8-A_CSesb8VFCFBZp5hAkKxqTEhW28Yl-s-PSDGi1jtqoVedc5H3G8G9DLkG6gBi3TVOQ-A-BM"/>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/95 backdrop-blur-sm px-2.5 py-1 border border-surface-container">
+<span class="font-label-tabular text-body-sm text-primary uppercase tracking-wide">Specimen #OK-340</span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 bg-surface-container-lowest/95 backdrop-blur-sm border border-surface-container flex items-center justify-center text-on-surface-variant hover:text-error hover:border-error transition-colors" title="Remove from wishlist" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/95 backdrop-blur-sm px-3 py-1.5 border border-surface-container flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase">Shuttle Loom Stock</span>
+<span class="font-label-tabular text-body-sm text-primary">65m Remaining</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center justify-between gap-space-xs mb-1">
+<span class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase">Okayama Cotton • Shuttle Loom</span>
+<span class="font-label-tabular text-body-sm text-secondary font-medium">In Stock</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary leading-tight">Japanese Selvedge Denim Drill — Indigo Raw</h3>
+<div class="mt-space-sm pt-space-xs border-t border-surface-container flex flex-col gap-1 text-on-surface-variant">
+<div class="flex items-center justify-between font-label-tabular text-body-sm">
+<span>Metric Weight / Width</span>
+<span class="text-primary">340 gsm (Heavy) • 82 cm</span>
+</div>
+<div class="flex items-center justify-between font-label-tabular text-body-sm">
+<span>Loom Provenance</span>
+<span class="text-primary">Kojima Historic Mill, Japan</span>
+</div>
+<div class="flex items-center justify-between font-label-tabular text-body-sm">
+<span>Bolt Unit Valuation</span>
+<span class="text-primary font-medium">€42.00 / meter</span>
+</div>
+</div>
+<!-- Note Placeholder Input -->
+<div class="mt-space-md p-space-sm bg-surface-container-low border border-surface-container flex items-center justify-between cursor-pointer hover:bg-surface-variant transition-colors">
+<span class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-widest">+ Add Sartorial Directive</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">add</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 pt-space-xs border-t border-surface-container">
+<div class="grid grid-cols-2 gap-1.5">
+<button class="w-full py-2 bg-primary text-on-primary font-label-eyebrow text-label-eyebrow uppercase tracking-[0.15em] hover:bg-neutral-800 transition-colors text-center" type="button">
+              Add Cut
+            </button>
+<button class="w-full py-2 bg-surface-container-low border border-surface-container text-primary font-label-eyebrow text-label-eyebrow uppercase tracking-[0.1em] hover:bg-surface-variant transition-colors text-center" type="button">
+              Swatch (€3.50)
+            </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Item 4: Matte Buffalo Horn Buttons -->
+<article class="flex flex-col bg-surface-container-lowest border border-surface-container group hover:border-on-surface-variant transition-colors">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]" data-alt="High angle macro studio photograph of dark mottled matte buffalo horn tailor buttons, artisanal hand-carved four-hole suit buttons resting in an orderly row on natural unbleached raw linen cloth, soft dramatic side lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe-ilocBAnUo7dRg7dEt_QDsJm3YXGmEe0AIhCDWl2Q3ptdnJ8FzXvKHBXbrjCmPiR-gQuHqYAAJ4UuxPhbheEv52lla4E2rZB150xAp7pUhRap7nPnNb2UtyeudbE5L7uHGOcTBIsuFM2F9eVoaaOdHK8dL3LA9gS83STCgsfL_LpmA89wuWjB4toacin7SgE3EJgZnTP7SWnXZEC_UaJeesx0tLVGt2deAe-x5Ov-62IjOdxVAst"/>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/95 backdrop-blur-sm px-2.5 py-1 border border-surface-container">
+<span class="font-label-tabular text-body-sm text-primary uppercase tracking-wide">Specimen #HRN-32L</span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 bg-surface-container-lowest/95 backdrop-blur-sm border border-surface-container flex items-center justify-center text-on-surface-variant hover:text-error hover:border-error transition-colors" title="Remove from wishlist" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/95 backdrop-blur-sm px-3 py-1.5 border border-surface-container flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase">Haberdashery Lot</span>
+<span class="font-label-tabular text-body-sm text-primary">Set of 14 Buttons</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center justify-between gap-space-xs mb-1">
+<span class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase">Water Buffalo Horn • Hand-Turned</span>
+<span class="font-label-tabular text-body-sm text-secondary font-medium">In Stock</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary leading-tight">Matte Buffalo Horn Buttons — Dark Mottled 32L</h3>
+<div class="mt-space-sm pt-space-xs border-t border-surface-container flex flex-col gap-1 text-on-surface-variant">
+<div class="flex items-center justify-between font-label-tabular text-body-sm">
+<span>Caliber / Profile</span>
+<span class="text-primary">32 Ligne (20 mm) • Concave Rim</span>
+</div>
+<div class="flex items-center justify-between font-label-tabular text-body-sm">
+<span>Atelier Carving Origin</span>
+<span class="text-primary">Bergamo Artisans, Italy</span>
+</div>
+<div class="flex items-center justify-between font-label-tabular text-body-sm">
+<span>Pack Valuation</span>
+<span class="text-primary font-medium">€28.00 / set</span>
+</div>
+</div>
+<div class="mt-space-md p-space-sm bg-surface-container-low border border-surface-container flex items-center justify-between cursor-pointer hover:bg-surface-variant transition-colors">
+<span class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-widest">+ Add Sartorial Directive</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">add</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 pt-space-xs border-t border-surface-container">
+<button class="w-full py-2 bg-primary text-on-primary font-label-eyebrow text-label-eyebrow uppercase tracking-[0.15em] hover:bg-neutral-800 transition-colors text-center" type="button">
+            Add Set to Bag
+          </button>
+</div>
+</div>
+</article>
+<!-- Item 5: Irish Crisp Linen Chambray -->
+<article class="flex flex-col bg-surface-container-lowest border border-surface-container group hover:border-on-surface-variant transition-colors">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]" data-alt="Extreme close up texture of slate indigo Irish linen chambray textile weave, showing white weft and deep slate warp threads intersecting, crisp high-end drapery cloth surface, natural lighting with fine shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhqH9CmO1QURSvi2L846ThOSH_5MiLSPxtLbc_GdW26D1Qa0j016ocPIBK66oczcf4Q4Z4JAAbuEs7-kMKQ7R7PSVFeLwB05_iq-k990C1h63WEj4bmeRn-ugunbGkrYo-e0nfrPkTtRBnHrulOoye9tRnEAlcaxNBbd8TAUV963zGDby-lQaXIN7GOJyBvbPx7UGzO32LUeeeTKtYgfQfpYln6KcUrp9MfeqqLA2dbMMLXlQ_quos"/>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/95 backdrop-blur-sm px-2.5 py-1 border border-surface-container">
+<span class="font-label-tabular text-body-sm text-primary uppercase tracking-wide">Specimen #IR-210</span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 bg-surface-container-lowest/95 backdrop-blur-sm border border-surface-container flex items-center justify-center text-on-surface-variant hover:text-error hover:border-error transition-colors" title="Remove from wishlist" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/95 backdrop-blur-sm px-3 py-1.5 border border-surface-container flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase">Bolt Inventory</span>
+<span class="font-label-tabular text-body-sm text-primary">14m Remaining</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center justify-between gap-space-xs mb-1">
+<span class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase">Wet-Spun Flax • Belfast Chambray</span>
+<span class="font-label-tabular text-body-sm text-secondary font-medium">In Stock</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary leading-tight">Irish Crisp Linen Chambray — Slate Indigo</h3>
+<div class="mt-space-sm pt-space-xs border-t border-surface-container flex flex-col gap-1 text-on-surface-variant">
+<div class="flex items-center justify-between font-label-tabular text-body-sm">
+<span>Metric Weight / Width</span>
+<span class="text-primary">210 gsm • 145 cm</span>
+</div>
+<div class="flex items-center justify-between font-label-tabular text-body-sm">
+<span>Loom Provenance</span>
+<span class="text-primary">Belfast Heritage Guild, N. Ireland</span>
+</div>
+<div class="flex items-center justify-between font-label-tabular text-body-sm">
+<span>Bolt Unit Valuation</span>
+<span class="text-primary font-medium">€36.00 / meter</span>
+</div>
+</div>
+<div class="mt-space-md p-space-sm bg-surface-container-low border border-surface-container flex items-center justify-between cursor-pointer hover:bg-surface-variant transition-colors">
+<span class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-widest">+ Add Sartorial Directive</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">add</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 pt-space-xs border-t border-surface-container">
+<div class="grid grid-cols-2 gap-1.5">
+<button class="w-full py-2 bg-primary text-on-primary font-label-eyebrow text-label-eyebrow uppercase tracking-[0.15em] hover:bg-neutral-800 transition-colors text-center" type="button">
+              Add Cut
+            </button>
+<button class="w-full py-2 bg-surface-container-low border border-surface-container text-primary font-label-eyebrow text-label-eyebrow uppercase tracking-[0.1em] hover:bg-surface-variant transition-colors text-center" type="button">
+              Request Swatch
+            </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Item 6: Raw Cotton Stay Tape -->
+<article class="flex flex-col bg-surface-container-lowest border border-surface-container group hover:border-on-surface-variant transition-colors">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]" data-alt="Artisanal rolled coil of natural unbleached raw cotton stay tape with herringbone weave pattern, tailor bespoke haberdashery notion photographed on minimalist neutral surface with precise studio focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwGxsN0o71n3WTNjPQ9Hg4RAlVZd8VJF_7nOR8jFd0N3Q7H1v3BPBhvo1PbEE_0WTFijqp05B0bUWB_r9DlfcIL7IlWSZAWdUZojw6khttHkZdNoAS_K6nanaMmZP0J40IsFz7y7gLlWaPo80uF_pPs8Bv0toSLJgmFNJpaL2N-tiy3x9ES1-Ij00USXy26s412ORMO6mWu_BygaoVIRUgjXCcuyzRQubJ_308kjpyzg5xTsZUseBL"/>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/95 backdrop-blur-sm px-2.5 py-1 border border-surface-container">
+<span class="font-label-tabular text-body-sm text-primary uppercase tracking-wide">Specimen #NT-12MM</span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 bg-surface-container-lowest/95 backdrop-blur-sm border border-surface-container flex items-center justify-center text-on-surface-variant hover:text-error hover:border-error transition-colors" title="Remove from wishlist" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/95 backdrop-blur-sm px-3 py-1.5 border border-surface-container flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase">Hank Quantity</span>
+<span class="font-label-tabular text-body-sm text-primary">10 Meter Coil</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center justify-between gap-space-xs mb-1">
+<span class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase">Herringbone Weave • Pre-Shrunk</span>
+<span class="font-label-tabular text-body-sm text-secondary font-medium">In Stock</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary leading-tight">Raw Cotton Stay Tape — 12mm</h3>
+<div class="mt-space-sm pt-space-xs border-t border-surface-container flex flex-col gap-1 text-on-surface-variant">
+<div class="flex items-center justify-between font-label-tabular text-body-sm">
+<span>Dimensions / Form</span>
+<span class="text-primary">12 mm width • Lapel &amp; Armhole Stay</span>
+</div>
+<div class="flex items-center justify-between font-label-tabular text-body-sm">
+<span>Milling Standard</span>
+<span class="text-primary">Lombardy Sartoria Spec</span>
+</div>
+<div class="flex items-center justify-between font-label-tabular text-body-sm">
+<span>Hank Valuation</span>
+<span class="text-primary font-medium">€14.00 / hank</span>
+</div>
+</div>
+<div class="mt-space-md p-space-sm bg-surface-container-low border border-surface-container flex items-center justify-between cursor-pointer hover:bg-surface-variant transition-colors">
+<span class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-widest">+ Add Sartorial Directive</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">add</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 pt-space-xs border-t border-surface-container">
+<button class="w-full py-2 bg-primary text-on-primary font-label-eyebrow text-label-eyebrow uppercase tracking-[0.15em] hover:bg-neutral-800 transition-colors text-center" type="button">
+            Add Hank to Bag
+          </button>
+</div>
+</div>
+</article>
+</div>
+<!-- Swatch Ring Composition Summary Tray -->
+<div class="mb-space-xl p-space-lg bg-surface-container-low border border-surface-container">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md border-b border-surface-container pb-space-md">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary tracking-[0.2em]">Ring Synthesis Configuration</span>
+<h4 class="font-headline-sm text-headline-sm text-primary">Folio Swatch Ring Preparation</h4>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-tabular text-label-tabular text-on-surface-variant">Selected Specimen Count:</span>
+<span class="font-label-tabular text-label-tabular text-primary font-medium">4 / 8 Maximum</span>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-md pt-space-md">
+<div class="p-space-sm bg-surface-container-lowest border border-surface-container flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-tabular text-body-sm text-secondary">01</span>
+<span class="w-2 h-2 rounded-full bg-[#D4CEB8]"></span>
+</div>
+<span class="font-body-sm text-body-sm text-primary font-medium truncate">Belgian Linen Slub</span>
+<span class="font-label-tabular text-label-eyebrow text-on-surface-variant uppercase">Kortrijk • 210gsm</span>
+</div>
+<div class="p-space-sm bg-surface-container-lowest border border-surface-container flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-tabular text-body-sm text-secondary">02</span>
+<span class="w-2 h-2 rounded-full bg-[#3D3F42]"></span>
+</div>
+<span class="font-body-sm text-body-sm text-primary font-medium truncate">Biella Super 120s</span>
+<span class="font-label-tabular text-label-eyebrow text-on-surface-variant uppercase">Piemonte • 290gsm</span>
+</div>
+<div class="p-space-sm bg-surface-container-lowest border border-surface-container flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-tabular text-body-sm text-secondary">03</span>
+<span class="w-2 h-2 rounded-full bg-[#1F2C4A]"></span>
+</div>
+<span class="font-body-sm text-body-sm text-primary font-medium truncate">Japanese Selvedge</span>
+<span class="font-label-tabular text-label-eyebrow text-on-surface-variant uppercase">Okayama • 340gsm</span>
+</div>
+<div class="p-space-sm bg-surface-container-lowest border border-surface-container flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-tabular text-body-sm text-secondary">04</span>
+<span class="w-2 h-2 rounded-full bg-[#4A5D6E]"></span>
+</div>
+<span class="font-body-sm text-body-sm text-primary font-medium truncate">Irish Linen Chambray</span>
+<span class="font-label-tabular text-label-eyebrow text-on-surface-variant uppercase">Belfast • 210gsm</span>
+</div>
+</div>
+</div>
+<!-- Bottom Archival Sourcing Inquiry Bar -->
+<div class="w-full bg-surface-container-lowest border border-surface-container p-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 border border-surface-container bg-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">qr_code_2</span>
+</div>
+<div>
+<p class="font-title-lg text-title-lg text-primary">
+          Looking for an out-of-stock vintage run or unlisted Biella deadstock mill lot?
+        </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Our Milanese archivist directly scours historic Northern Italian weaving reserves and private atelier estate vaults.
+        </p>
+</div>
+</div>
+<a class="shrink-0 font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-primary hover:text-secondary border-b border-primary hover:border-secondary pb-0.5 transition-colors flex items-center gap-1" href="#">
+<span>Submit Tailor Bespoke Sourcing Request</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<script>
+  // Interactive micro-interactions for Wishlist removal feedback and notification
+  document.querySelectorAll('article button[title="Remove from wishlist"]').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const card = this.closest('article');
+      if (card) {
+        card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        card.style.opacity = '0.3';
+        setTimeout(() => {
+          if (confirm('Remove this archival specimen from your portfolio dossier?')) {
+            card.remove();
+          } else {
+            card.style.opacity = '1';
+          }
+        }, 150);
+      }
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-surface-container py-space-lg"><div class="w-full px-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-col gap-1"><span class="font-title-lg text-title-lg text-primary tracking-wide">TÈSSILE Atelier</span><p class="font-body-sm text-body-sm text-on-surface-variant">Bespoke Drapery, Archival Curation &amp; Master Sartoria. Fondata a Milano 1928.</p></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm border border-surface-container px-space-sm py-1 bg-surface"><span class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant">Devise</span><span class="font-label-tabular text-label-tabular text-primary font-medium">€ EUR</span><span class="font-label-tabular text-label-tabular text-on-surface-variant">/</span><span class="font-label-tabular text-label-tabular text-on-surface-variant hover:text-primary cursor-pointer">$ USD</span><span class="font-label-tabular text-label-tabular text-on-surface-variant">/</span><span class="font-label-tabular text-label-tabular text-on-surface-variant hover:text-primary cursor-pointer">¥ JPY</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 TÈSSILE Atelier S.r.l. All rights reserved.</span></div></div></footer></div></body></html>

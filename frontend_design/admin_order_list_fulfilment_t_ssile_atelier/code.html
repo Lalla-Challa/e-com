@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-dim":"#dadad7","secondary-fixed-dim":"#e3c193","secondary-container":"#fedaaa","on-secondary-container":"#795e38","surface-bright":"#f9f9f6","on-error":"#ffffff","surface":"#f9f9f6","error":"#ba1a1a","on-secondary-fixed":"#291800","on-primary-fixed":"#1c1b1b","inverse-primary":"#c8c6c5","on-secondary-fixed-variant":"#5a431f","surface-container":"#eeeeeb","on-primary":"#ffffff","secondary-fixed":"#ffddb1","surface-container-lowest":"#ffffff","surface-variant":"#e2e3e0","error-container":"#ffdad6","inverse-surface":"#2f312f","outline-variant":"#c4c7c7","on-tertiary-fixed-variant":"#474743","tertiary-fixed-dim":"#c8c6c1","on-tertiary-fixed":"#1b1c18","outline":"#747878","inverse-on-surface":"#f1f1ee","tertiary-container":"#1b1c18","surface-container-low":"#f4f4f1","secondary":"#745a34","primary-container":"#1c1b1b","surface-tint":"#5f5e5e","primary-fixed-dim":"#c8c6c1","tertiary":"#000000","on-surface-variant":"#444748","on-background":"#1a1c1b","on-error-container":"#93000a","tertiary-fixed":"#e4e2dc","on-primary-container":"#858383","primary-fixed":"#e5e2e1","on-surface":"#1a1c1b","background":"#f9f9f6","primary":"#000000","surface-container-highest":"#e2e3e0","on-primary-fixed-variant":"#474746","on-tertiary":"#ffffff","surface-container-high":"#e8e8e5","on-secondary":"#ffffff","on-tertiary-container":"#85847f"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-md":"1rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-lg":"2rem","margin-mobile":"1.25rem","gutter":"1.5rem","space-xl":"4rem","space-sm":"0.5rem","margin":"4rem"},fontFamily:{"body-md":["Hanken Grotesk"],"display-lg-mobile":["EB Garamond"],"body-sm":["Hanken Grotesk"],"headline-sm":["EB Garamond"],"label-tabular":["Hanken Grotesk"],"display-lg":["EB Garamond"],"display-md-mobile":["EB Garamond"],"title-lg":["EB Garamond"],"body-lg":["Hanken Grotesk"],"label-eyebrow":["Hanken Grotesk"],"display-md":["EB Garamond"]},fontSize:{"body-md":["0.9375rem",{"lineHeight":"1.5rem","letterSpacing":"0em","fontWeight":"400"}],"display-lg-mobile":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.01em","fontWeight":"400"}],"body-sm":["0.8125rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"400"}],"headline-sm":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"0em","fontWeight":"400"}],"label-tabular":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.02em","fontWeight":"400"}],"display-lg":["3.5rem",{"lineHeight":"4rem","letterSpacing":"-0.015em","fontWeight":"400"}],"display-md-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"0em","fontWeight":"400"}],"title-lg":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"0.01em","fontWeight":"400"}],"body-lg":["1.0625rem",{"lineHeight":"1.75rem","letterSpacing":"-0.005em","fontWeight":"400"}],"label-eyebrow":["0.6875rem",{"lineHeight":"1rem","letterSpacing":"0.2em","fontWeight":"500"}],"display-md":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.01em","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest border-b border-surface-container-highest z-50 flex items-center justify-between px-gutter"><div class="flex items-center gap-space-md"><img alt="Brand logo. - Primary color: #1a1a1a
+- Font: ebGaramond
+- Mode: light
+- Roundness: rounded-lg
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X3kTNj1h3qzEe6SluENtp9S59IjKiEXr3zoP5AFxEJQKwa39q2hn3JzRrJS-pemKnGjTkxZsW93YhV2NCp_upX4NKC6uiNpMedhPynbDQv4ev3CskqYpbmiMmUXNtP_qm3KCZ0xaHqN14hHREhgGJVn2tm0RAZzEAgFDpn_rVbFXGlI63W3ifw2uwZFZk2KHcoY1-t8VaPUt7UyZJ7SqpIkoAdLv6sJxRyGTkBfPQ5K5jnI5Pb5XO4HQ"/><div class="flex flex-col"><span class="font-title-lg text-title-lg font-normal tracking-[0.2em] uppercase text-primary leading-tight">TÈSSILE Atelier</span><span class="font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-on-surface-variant">Curatorial Console &amp; Back-Office</span></div><div class="h-5 w-px bg-surface-container-highest ml-space-xs"></div><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-low border border-surface-container-highest"><span class="material-symbols-outlined text-[16px] text-secondary">location_on</span><select class="bg-transparent font-label-tabular text-label-tabular text-on-surface focus:outline-none cursor-pointer pr-space-xs"><option value="milan">Milan Cutting Floor #01</option><option value="kyoto">Kyoto Notion Depot #02</option></select></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-md px-space-md py-1 border border-surface-container-highest bg-surface-container-lowest"><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-label-tabular text-label-tabular text-on-surface-variant">DB: Synced</span></div><div class="w-px h-3 bg-surface-container-highest"></div><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-label-tabular text-label-tabular text-on-surface-variant">Queue: Active</span></div><div class="w-px h-3 bg-surface-container-highest"></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px] text-secondary">verified_user</span><span class="font-label-tabular text-label-tabular text-on-surface-variant">Argon2 Enclave</span></div></div><div class="flex items-center gap-space-sm pl-space-md border-l border-surface-container-highest"><div class="flex flex-col text-right"><span class="font-label-tabular text-label-tabular text-on-surface font-medium leading-none">Giancarlo Conti</span><span class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-[0.1em] mt-1">Master Cutter &amp; Director</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><button class="flex items-center justify-center p-1 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Operator Options"><span class="material-symbols-outlined text-[18px]">more_vert</span></button></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-72 bg-surface-container-lowest border-r border-surface-container-highest z-40 flex flex-col justify-between overflow-y-auto"><div class="p-space-md space-y-space-lg"><nav class="space-y-space-lg" data-active-classes="bg-primary-container text-on-primary-container font-medium"><div class="space-y-space-xs"><p class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-[0.2em] px-space-sm py-1">COMMAND</p><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="font-body-sm text-body-sm">Dashboard &amp; KPIs</span></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-2 transition-colors bg-primary-container text-on-primary-container font-medium" data-path="orders" href="#"><span class="font-body-sm text-body-sm">Orders &amp; Cutting Floor</span><span class="font-label-tabular text-[11px] px-1.5 py-0.5 bg-secondary-container text-on-secondary-container border border-secondary/20">14 Pending</span></a></div></div><div class="space-y-space-xs"><p class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-[0.2em] px-space-sm py-1">CATALOG &amp; WEAVES</p><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="products" href="#"><span class="font-body-sm text-body-sm">Products &amp; Rolls</span></a><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="new-product" href="#"><span class="font-body-sm text-body-sm">Add Fabric / Notion</span></a><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="categories" href="#"><span class="font-body-sm text-body-sm">Categories &amp; Weaves</span></a></div></div><div class="space-y-space-xs"><p class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-[0.2em] px-space-sm py-1">LOGISTICS &amp; LEDGER</p><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="inventory" href="#"><span class="font-body-sm text-body-sm">Inventory &amp; Stock Log</span><span class="font-label-tabular text-[11px] px-1.5 py-0.5 bg-surface-container-high text-on-surface border border-outline-variant">3 Low Stock</span></a><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="outbox" href="#"><span class="font-body-sm text-body-sm">Outbox &amp; Transmittals</span><span class="font-label-tabular text-[11px] px-1.5 py-0.5 bg-surface-container-high text-on-surface border border-outline-variant">5 Queued</span></a></div></div><div class="space-y-space-xs"><p class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-[0.2em] px-space-sm py-1">SYSTEM</p><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="cms" href="#"><span class="font-body-sm text-body-sm">CMS Pages &amp; Policies</span></a><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="font-body-sm text-body-sm">Atelier Settings &amp; Tax / DDP</span></a></div></div></nav></div><div class="p-space-md border-t border-surface-container-highest bg-surface-container-low space-y-space-sm"><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><p class="font-label-tabular text-[11px] text-on-surface-variant leading-tight">v4.12 Engine • DB 22 Tables • 98/98 Passed</p></div><div class="grid grid-cols-2 gap-space-xs pt-1"><button class="w-full py-1.5 px-2 border border-surface-container-highest bg-surface-container-lowest hover:bg-surface-container hover:text-on-surface font-label-eyebrow text-[10px] tracking-[0.1em] uppercase text-on-surface-variant transition-colors">Valuations</button><button class="w-full py-1.5 px-2 border border-error/30 bg-surface-container-lowest hover:bg-error-container hover:text-on-error-container font-label-eyebrow text-[10px] tracking-[0.1em] uppercase text-error transition-colors">Halt Shears</button></div></div></aside><div class="pl-72"><main class="relative pt-16 bg-surface min-h-screen w-full px-gutter"><div class="flex flex-col w-full pb-16">
+<!-- Command Strip & Atelier Breadcrumbs -->
+<header class="w-full bg-surface-container-lowest p-space-md shadow-sm mb-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- Breadcrumb + Hierarchy -->
+<div class="flex items-center gap-space-sm">
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-on-surface-variant">Console</span>
+<span class="text-outline-variant font-label-tabular">/</span>
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-on-surface-variant">Orders &amp; Cutting Floor</span>
+<span class="text-outline-variant font-label-tabular">/</span>
+<span class="font-title-lg text-title-lg text-primary tracking-wide">Dossier #TL-2025-8849</span>
+<span class="px-space-xs py-0.5 bg-secondary-container text-on-secondary-container font-label-eyebrow text-[10px] tracking-widest uppercase ml-space-xs">Bench In-Session</span>
+</div>
+<!-- Search & Context Switcher -->
+<div class="flex items-center gap-space-md flex-1 max-w-xl lg:justify-end">
+<div class="relative w-full max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">search</span>
+<input class="w-full bg-surface-container-low pl-10 pr-4 py-2 font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container transition-colors" placeholder="Filter by Order #, Client Dossier, Fabric Batch, or Postal Tracking..." type="text"/>
+</div>
+<button class="bg-surface-container-low px-3 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors flex items-center gap-1 font-label-tabular text-body-sm whitespace-nowrap" title="Barcode Scanner Link">
+<span class="material-symbols-outlined text-[18px]">barcode_scanner</span>
+<span>Wand: Active</span>
+</button>
+</div>
+</div>
+<!-- Status Filter Ribbon -->
+<div class="flex flex-wrap items-center justify-between gap-y-space-sm pt-space-md mt-space-sm bg-surface-container-lowest">
+<div class="flex flex-wrap items-center gap-1">
+<button class="px-3 py-1.5 font-label-tabular text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+          All <span class="text-outline text-[11px] ml-1 font-normal">(142)</span>
+</button>
+<button class="px-3 py-1.5 font-label-tabular text-body-sm text-on-primary bg-primary transition-colors">
+          Pending Shears <span class="text-surface-variant text-[11px] ml-1 font-normal">(14)</span>
+</button>
+<button class="px-3 py-1.5 font-label-tabular text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+          Cutting &amp; Inspection <span class="text-outline text-[11px] ml-1 font-normal">(8)</span>
+</button>
+<button class="px-3 py-1.5 font-label-tabular text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+          Rolled &amp; Sealed <span class="text-outline text-[11px] ml-1 font-normal">(12)</span>
+</button>
+<button class="px-3 py-1.5 font-label-tabular text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+          Dispatched <span class="text-outline text-[11px] ml-1 font-normal">(98)</span>
+</button>
+<button class="px-3 py-1.5 font-label-tabular text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+          Cancelled / Restocked <span class="text-outline text-[11px] ml-1 font-normal">(10)</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-outline mr-1 tracking-widest">Filter:</span>
+<button class="px-2.5 py-1 text-[11px] font-label-tabular tracking-wider uppercase bg-secondary/10 text-secondary hover:bg-secondary/20 transition-colors">
+          High Priority Guild Cuts
+        </button>
+<button class="px-2.5 py-1 text-[11px] font-label-tabular tracking-wider uppercase bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors">
+          Continuous Roll
+        </button>
+</div>
+</div>
+</header>
+<!-- Master-Detail Canvas (4.5 cols vs 7.5 cols on desktop) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-md items-start">
+<!-- LEFT PANE: Order Register (4.5 cols / ~37.5%) -->
+<section class="xl:col-span-5 flex flex-col gap-space-sm bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-primary">Floor Ledger</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<span class="font-label-tabular text-body-sm text-on-surface-variant">Showing 4 of 14 Shears</span>
+</div>
+<!-- Order Queue Cards -->
+<div class="flex flex-col gap-space-xs" id="order-register-list">
+<!-- CARD 1 (Active Selected) -->
+<article class="p-space-md bg-surface-container-high transition-all cursor-pointer relative shadow-sm">
+<div class="flex items-start justify-between gap-space-sm mb-1.5">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-tabular font-medium text-body-md text-primary">#TL-2025-8849</span>
+<span class="px-1.5 py-0.5 bg-primary text-on-primary font-label-eyebrow text-[9px] tracking-wider uppercase">Active</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mt-0.5 leading-snug">Lord Julian Vance</h3>
+</div>
+<div class="text-right">
+<span class="font-label-tabular text-body-md font-semibold text-primary">€312.00</span>
+<p class="font-label-eyebrow text-[10px] text-on-surface-variant uppercase tracking-wider">3 Items (5.5m)</p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-2 mt-3 pt-2 bg-surface-container/60 p-2">
+<span class="font-label-eyebrow text-[10px] tracking-widest uppercase bg-surface-container-highest px-2 py-0.5 text-on-surface">Bench 02</span>
+<span class="font-label-tabular text-[11px] text-on-surface-variant">14 Oct 2025, 08:30 CET</span>
+<span class="ml-auto font-label-eyebrow text-[10px] tracking-widest uppercase px-1.5 py-0.5 bg-secondary-container text-on-secondary-container">DDP London</span>
+</div>
+</article>
+<!-- CARD 2 -->
+<article class="p-space-md bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer">
+<div class="flex items-start justify-between gap-space-sm mb-1.5">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-tabular font-medium text-body-md text-primary">#TL-2025-8850</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mt-0.5 leading-snug">Studio 4B (Hélène de Valois)</h3>
+</div>
+<div class="text-right">
+<span class="font-label-tabular text-body-md font-semibold text-primary">€282.00</span>
+<p class="font-label-eyebrow text-[10px] text-on-surface-variant uppercase tracking-wider">2 Items (7.5m)</p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-2 mt-2">
+<span class="font-label-eyebrow text-[10px] tracking-widest uppercase bg-surface-container-highest px-2 py-0.5 text-on-surface">Rolled &amp; Sealed</span>
+<span class="font-label-tabular text-[11px] text-on-surface-variant">14 Oct 2025, 09:15 CET</span>
+<span class="ml-auto font-label-eyebrow text-[10px] tracking-widest uppercase px-1.5 py-0.5 bg-surface-container text-on-surface-variant">Standard EU</span>
+</div>
+</article>
+<!-- CARD 3 -->
+<article class="p-space-md bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer">
+<div class="flex items-start justify-between gap-space-sm mb-1.5">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-tabular font-medium text-body-md text-primary">#TL-2025-8851</span>
+<span class="px-1.5 py-0.5 bg-secondary/15 text-secondary font-label-eyebrow text-[9px] tracking-wider uppercase">Bolt Cut</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mt-0.5 leading-snug">Savile Row Bespoke Guild</h3>
+</div>
+<div class="text-right">
+<span class="font-label-tabular text-body-md font-semibold text-primary">€1,420.00</span>
+<p class="font-label-eyebrow text-[10px] text-on-surface-variant uppercase tracking-wider">1 Bolt (25m)</p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-2 mt-2">
+<span class="font-label-eyebrow text-[10px] tracking-widest uppercase bg-surface-container-highest px-2 py-0.5 text-on-surface">Pending Shears</span>
+<span class="font-label-tabular text-[11px] text-on-surface-variant">14 Oct 2025, 10:00 CET</span>
+<span class="ml-auto font-label-eyebrow text-[10px] tracking-widest uppercase px-1.5 py-0.5 bg-secondary-container text-on-secondary-container">Urgent Guild</span>
+</div>
+</article>
+<!-- CARD 4 -->
+<article class="p-space-md bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer">
+<div class="flex items-start justify-between gap-space-sm mb-1.5">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-tabular font-medium text-body-md text-primary">#TL-2025-8852</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mt-0.5 leading-snug">Kenji Sato</h3>
+</div>
+<div class="text-right">
+<span class="font-label-tabular text-body-md font-semibold text-primary">€86.00</span>
+<p class="font-label-eyebrow text-[10px] text-on-surface-variant uppercase tracking-wider">Notions Only</p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-2 mt-2">
+<span class="font-label-eyebrow text-[10px] tracking-widest uppercase bg-surface-container-highest px-2 py-0.5 text-on-surface">Packaging</span>
+<span class="font-label-tabular text-[11px] text-on-surface-variant">14 Oct 2025, 11:20 CET</span>
+<span class="ml-auto font-label-eyebrow text-[10px] tracking-widest uppercase px-1.5 py-0.5 bg-surface-container text-on-surface-variant">Japan Air Express</span>
+</div>
+</article>
+</div>
+<!-- Quick Metrics Ledger -->
+<div class="mt-space-md pt-space-md bg-surface-container-low p-space-md">
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-on-surface-variant block mb-2">Shift Throughput Status</span>
+<div class="grid grid-cols-2 gap-space-sm font-label-tabular text-body-sm">
+<div>
+<span class="text-on-surface-variant block text-[11px]">Linear Sheared Today</span>
+<span class="font-semibold text-primary text-title-lg">48.5m / 80m</span>
+</div>
+<div>
+<span class="text-on-surface-variant block text-[11px]">Bolt Roll Backlog</span>
+<span class="font-semibold text-secondary text-title-lg">6 Continuous Rolls</span>
+</div>
+</div>
+</div>
+</section>
+<!-- RIGHT PANE: Cutting Station & Fulfilment Dossier (7.5 cols / ~62.5%) -->
+<main class="xl:col-span-7 flex flex-col gap-space-md bg-surface-container-lowest p-space-lg shadow-sm">
+<!-- Dossier Top Action Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between pb-space-md gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase tracking-[0.25em]">Cutting Station Dossier</span>
+<span class="font-label-tabular text-body-sm text-outline-variant">• Bench #02 Milan</span>
+</div>
+<h1 class="font-display-md text-display-md text-primary tracking-tight mt-0.5">Order #TL-2025-8849</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Client: <span class="font-medium text-primary">Lord Julian Vance (Savile Row Patron #V-88)</span> • Destination: <span class="font-medium text-primary">Mayfair, London, UK</span>
+</p>
+</div>
+<!-- Master Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="bg-primary text-on-primary hover:bg-surface-container-highest hover:text-primary transition-colors px-4 py-2.5 font-label-eyebrow text-[11px] uppercase tracking-[0.2em] flex items-center gap-1.5 shadow-sm" id="btn-complete-cut">
+<span class="material-symbols-outlined text-[16px]">content_cut</span>
+<span>Mark Cut Completed</span>
+</button>
+<button class="bg-surface-container-low hover:bg-surface-container text-primary transition-colors px-3 py-2.5 font-label-eyebrow text-[11px] uppercase tracking-[0.15em] flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+<span>DHL Archival Waybill</span>
+</button>
+<button class="bg-surface-container-low hover:bg-surface-container text-primary transition-colors px-3 py-2.5 font-label-eyebrow text-[11px] uppercase tracking-[0.15em] flex items-center gap-1.5" title="Print Cutter Docket">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span>Slip &amp; Bolt Tags</span>
+</button>
+<button class="bg-surface-container-low hover:bg-error-container hover:text-on-error-container text-outline transition-colors p-2.5 flex items-center justify-center" title="Issue Restock or Refund">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+</button>
+</div>
+</div>
+<!-- Consignment Progress Machine (State Machine Visualizer) -->
+<section class="bg-surface-container-low p-space-md">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-on-surface-variant">Consignment Stage Machine</span>
+<span class="font-label-tabular text-[11px] text-secondary font-medium tracking-wide">Stage 2 of 4 In Execution</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-xs">
+<!-- Step 1: Completed -->
+<div class="bg-surface-container-lowest p-space-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-tabular text-[11px] text-on-surface-variant">Stage 01</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+</div>
+<div class="mt-2">
+<h4 class="font-title-lg text-body-md text-primary font-medium">Order Logged</h4>
+<p class="font-label-tabular text-[11px] text-on-surface-variant">Validated &amp; Paid</p>
+</div>
+</div>
+<!-- Step 2: Active (In Progress) -->
+<div class="bg-surface-container-highest p-space-sm flex flex-col justify-between relative shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-tabular text-[11px] text-secondary font-semibold">Stage 02</span>
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+</div>
+<div class="mt-2">
+<h4 class="font-title-lg text-body-md text-primary font-medium">Shears to Raw Bolt</h4>
+<p class="font-label-tabular text-[11px] text-secondary font-medium">Bench 02 • Under Shear</p>
+</div>
+</div>
+<!-- Step 3: Pending -->
+<div class="bg-surface-container p-space-sm flex flex-col justify-between opacity-70">
+<div class="flex items-center justify-between">
+<span class="font-label-tabular text-[11px] text-outline">Stage 03</span>
+<span class="material-symbols-outlined text-outline text-[16px]">hourglass_empty</span>
+</div>
+<div class="mt-2">
+<h4 class="font-title-lg text-body-md text-on-surface-variant">Core Rolling &amp; Seal</h4>
+<p class="font-label-tabular text-[11px] text-outline">Wax seal &amp; cedar tag</p>
+</div>
+</div>
+<!-- Step 4: Pending -->
+<div class="bg-surface-container p-space-sm flex flex-col justify-between opacity-70">
+<div class="flex items-center justify-between">
+<span class="font-label-tabular text-[11px] text-outline">Stage 04</span>
+<span class="material-symbols-outlined text-outline text-[16px]">flight_takeoff</span>
+</div>
+<div class="mt-2">
+<h4 class="font-title-lg text-body-md text-on-surface-variant">Courier Transit</h4>
+<p class="font-label-tabular text-[11px] text-outline">DHL Express UK DDP</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Cutting Room Specification & Line Item Table -->
+<section class="flex flex-col gap-space-sm mt-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-primary">Cutting Room Specification</h2>
+<span class="font-label-eyebrow text-[10px] tracking-widest uppercase bg-surface-container-high px-2 py-0.5 text-on-surface-variant">Tolerance: ±0.5cm</span>
+</div>
+<span class="font-label-tabular text-[12px] text-on-surface-variant">Master Cutter Signoff Required</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- ITEM 1: Normandy Heavy Linen -->
+<div class="bg-surface-container-low p-space-md flex flex-col md:flex-row gap-space-md items-start">
+<div class="w-full md:w-36 h-36 flex-shrink-0 bg-surface-container-highest overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Editorial macro photograph of folded Normandy Washed Heavy Linen in terracotta Terre Cuite shade, displaying tactile rough slub weave texture, warm atelier studio lighting, neutral minimal background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-qlfGorzaPXJ3o0mSnOL8C3YsUxs1GZ77ZY-i1f_9eIA8ZTF4p4rXCGVFxIDItxJuLikrdM7Tu9F-uIuthU6KglAeurmvqTE7mCHQqSYctP0BeE9-X-iSc_tm1beUCt-e9wiOy_0iW8X2bewEaRUnrAqssYZyMPRvOpIByxKqghDa553Y-vGYwaayavYvkfb62v_w4jZHjEwWL7XA3Yw_ABRoMmgLlmBdXug_hgkGN3zkqOqM-aaN"/>
+<span class="absolute top-1 left-1 bg-primary text-on-primary font-label-eyebrow text-[8px] px-1 py-0.5 uppercase tracking-wider">Bolt Cut</span>
+</div>
+<div class="flex-1 flex flex-col justify-between h-full w-full">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-xs">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-secondary">Pure Courtrai Flax • 280 gsm</span>
+<h3 class="font-title-lg text-title-lg text-primary mt-0.5">Normandy Washed Heavy Linen — Terre Cuite</h3>
+<p class="font-label-tabular text-body-sm text-on-surface-variant mt-0.5">SKU: NMD-LIN-280-TC • Roll Width: 152cm</p>
+</div>
+<div class="text-right">
+<span class="font-label-tabular text-title-lg font-semibold text-primary">3.00 Metres</span>
+<p class="font-label-eyebrow text-[10px] text-outline uppercase tracking-wider">Shear Length</p>
+</div>
+</div>
+<!-- Bolt & Location Coordinates -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs my-space-sm p-space-xs bg-surface-container-lowest">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[16px]">shelves</span>
+<span class="font-label-tabular text-[12px] text-on-surface">Location: <strong class="text-primary font-semibold">Rack B-04 (Roll #84)</strong></span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[16px]">inventory</span>
+<span class="font-label-tabular text-[12px] text-on-surface">Source Bolt: <strong class="text-primary font-semibold">Batch #24-D (Courtrai)</strong></span>
+</div>
+</div>
+<!-- Special Directive Box -->
+<div class="bg-secondary-container/40 p-2.5 mb-3 flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0 mt-0.5">priority_high</span>
+<p class="font-body-sm text-body-sm text-on-secondary-container">
+<strong class="font-semibold uppercase tracking-wider text-[11px] font-label-eyebrow block">Special Directive:</strong>
+                  Retain uncut woven selvage marking along full 300cm edge. Do not trim fringe.
+                </p>
+</div>
+<!-- Item Action Row -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-tabular text-[11px] text-on-surface-variant">Measured: 300.0cm checked</span>
+</div>
+<button class="item-shear-btn px-4 py-1.5 bg-primary text-on-primary hover:bg-surface-container-highest hover:text-primary transition-colors font-label-eyebrow text-[10px] uppercase tracking-widest flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">done</span>
+<span>Mark Sheared [3.0m]</span>
+</button>
+</div>
+</div>
+</div>
+<!-- ITEM 2: Biella Wool Worsted -->
+<div class="bg-surface-container-low p-space-md flex flex-col md:flex-row gap-space-md items-start">
+<div class="w-full md:w-36 h-36 flex-shrink-0 bg-surface-container-highest overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Photographic swatch shot of fine Biella wool worsted flannel fabric in charcoal melange weave, high-end suiting texture, draped cleanly under directional warm bespoke studio light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxWLwSF1nAJf2ZdLSj5jjmkxWn5GdEdKE98mklOG6M4sjfTj4rYL1tkjVdrqSnYkpuVMfKBsbn0T_1kShpFViOlqVMZipaAenavZXMggrmroAfp32t91ggbf8UojRVuuW9BSFuhbCnhLoBmhQsJ-T0utk0daBuyDVlam-o-pAG29irUr-oAAFtanLNYaH9U3HHdRPta8v-sGcPk2tbfTTQ4MtIUDdNMDjmwib0Ay7v8tMVSZgj9KbO"/>
+<span class="absolute top-1 left-1 bg-primary text-on-primary font-label-eyebrow text-[8px] px-1 py-0.5 uppercase tracking-wider">Bolt Cut</span>
+</div>
+<div class="flex-1 flex flex-col justify-between h-full w-full">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-xs">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-secondary">Super 120s Worsted • 290 gsm</span>
+<h3 class="font-title-lg text-title-lg text-primary mt-0.5">Biella Wool Worsted Flannel — Charcoal Melange</h3>
+<p class="font-label-tabular text-body-sm text-on-surface-variant mt-0.5">SKU: BLA-WOL-290-CH • Roll Width: 150cm</p>
+</div>
+<div class="text-right">
+<span class="font-label-tabular text-title-lg font-semibold text-primary">2.50 Metres</span>
+<p class="font-label-eyebrow text-[10px] text-outline uppercase tracking-wider">Shear Length</p>
+</div>
+</div>
+<!-- Bolt & Location Coordinates -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs my-space-sm p-space-xs bg-surface-container-lowest">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[16px]">shelves</span>
+<span class="font-label-tabular text-[12px] text-on-surface">Location: <strong class="text-primary font-semibold">Rack W-12 (Roll #19)</strong></span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[16px]">inventory</span>
+<span class="font-label-tabular text-[12px] text-on-surface">Source Bolt: <strong class="text-primary font-semibold">Batch #19-B (Biella Mills)</strong></span>
+</div>
+</div>
+<!-- Special Directive Box -->
+<div class="bg-surface-container-highest p-2.5 mb-3 flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] flex-shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+<strong class="font-semibold uppercase tracking-wider text-[11px] font-label-eyebrow block">Special Directive:</strong>
+                  Baste grainline with unbleached cotton basting thread before unrolling.
+                </p>
+</div>
+<!-- Item Action Row -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+<span class="font-label-tabular text-[11px] text-on-surface-variant">Awaiting Shears on Bench</span>
+</div>
+<button class="item-shear-btn px-4 py-1.5 bg-primary text-on-primary hover:bg-surface-container-highest hover:text-primary transition-colors font-label-eyebrow text-[10px] uppercase tracking-widest flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">done</span>
+<span>Mark Sheared [2.5m]</span>
+</button>
+</div>
+</div>
+</div>
+<!-- ITEM 3: Notions / Buttons -->
+<div class="bg-surface-container-low p-space-md flex flex-col md:flex-row gap-space-md items-start">
+<div class="w-full md:w-36 h-36 flex-shrink-0 bg-surface-container-highest overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Close up still life of genuine hand-carved dark mottled buffalo horn suit buttons lying on off-white raw linen weave, artisanal tailoring haberdashery details, soft architectural shadow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1qenNPsE02jYC2pTna-v7ZSQIMNigIQLfAPlpIlKg-ATLDscCSrLlHMsd6PoxG17DqIo0wutoHaOMgIjN9INkFWc65jziXP3TnWZEBSmcXmfjOkVnu3ZlN526ev-99GR5e5gOh4LSlcFN1CmXn8E3_FzyD5zOAv9LlL2psld0wbbb_A16dzYwjSoXvccd3NPg-CLgnKj18-vvhJtLDGMc4P0zjRAuqjedy58W71zT5bkdU5WF9k40"/>
+<span class="absolute top-1 left-1 bg-surface-container-high text-primary font-label-eyebrow text-[8px] px-1 py-0.5 uppercase tracking-wider">Haberdashery</span>
+</div>
+<div class="flex-1 flex flex-col justify-between h-full w-full">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-xs">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-secondary">Natural Water Buffalo Horn • Milan Carved</span>
+<h3 class="font-title-lg text-title-lg text-primary mt-0.5">Matte Buffalo Horn Buttons — Dark Mottled 32L</h3>
+<p class="font-label-tabular text-body-sm text-on-surface-variant mt-0.5">SKU: BTN-HRN-32L-DRK • Finished with Matte Polish</p>
+</div>
+<div class="text-right">
+<span class="font-label-tabular text-title-lg font-semibold text-primary">1 Set (14 Pcs)</span>
+<p class="font-label-eyebrow text-[10px] text-outline uppercase tracking-wider">4x 32L Front + 10x 24L Cuff</p>
+</div>
+</div>
+<!-- Location Coordinates -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs my-space-sm p-space-xs bg-surface-container-lowest">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[16px]">cloud_download</span>
+<span class="font-label-tabular text-[12px] text-on-surface">Compartment: <strong class="text-primary font-semibold">Cabinet N-02 / Drawer 4</strong></span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span class="font-label-tabular text-[12px] text-on-surface">Inspection: <strong class="text-primary font-semibold">Grain Verified &amp; Paired</strong></span>
+</div>
+</div>
+<!-- Item Action Row -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-tabular text-[11px] text-secondary font-medium">Status: Picked &amp; Linen Pouch Bagged</span>
+</div>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface font-label-eyebrow text-[10px] uppercase tracking-widest">
+                  Verified In Pouch
+                </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Packaging Directives & Tubes Specs -->
+<section class="bg-surface-container-low p-space-md">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">inventory_2</span>
+<div>
+<h4 class="font-title-lg text-title-lg text-primary">Mandatory Atelier Packing Directive</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+              Consignment must be rolled continuously onto <strong class="text-primary font-medium">148cm heavy rigid cylindrical cardboard core</strong>. <span class="text-error font-medium">STRICTLY ZERO FOLD CREASES.</span> Wrap rolled fabrics in unbleached tissue, enveloped in moisture-barrier waxed craft sleeve, sealed with Atelier embossed burgundy wax stamp #03.
+            </p>
+</div>
+</div>
+</section>
+<!-- Client Notes & Master Cutter Communications Thread -->
+<section class="bg-surface-container-low p-space-md">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-on-surface-variant">Patron Communications Log</span>
+<span class="font-label-tabular text-[11px] text-on-surface-variant">Encrypted Channel</span>
+</div>
+<!-- Incoming Client Message -->
+<div class="p-space-md bg-surface-container-lowest mb-space-sm">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-tabular text-body-sm font-semibold text-primary">Lord Julian Vance (Client Note)</span>
+<span class="font-label-tabular text-[11px] text-outline">14 Oct 2025, 08:32 CET</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+            "Please ensure the uncut selvage markings on both the Normandy Terre Cuite and the Biella worsted remain fully intact. My Savile Row cutter preserves these in the bespoke interior jacket facing."
+          </p>
+</div>
+<!-- Cutter Dispatch Response Entry -->
+<div class="space-y-space-xs">
+<label class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant tracking-[0.2em] block">
+            Cutter Transmittal Response (Included on Printed Slip &amp; Patron Email)
+          </label>
+<textarea class="w-full bg-surface-container-lowest p-space-sm font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-bright transition-colors resize-none" rows="2">Selvage markings verified and inspected on Bench 02. Both bolt cuts drafted with continuous selvage boundary and tagged with water-soluble atelier chalk.</textarea>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-tabular text-[11px] text-outline">Sign-off: Giancarlo Conti (Master Cutter #01)</span>
+<button class="px-4 py-1.5 bg-primary text-on-primary hover:bg-surface-container-highest hover:text-primary transition-colors font-label-eyebrow text-[10px] uppercase tracking-widest flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">send</span>
+<span>Send Dispatch Note to Patron</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Ledger Summary & Financial Settlement Breakdown -->
+<section class="bg-surface-container-low p-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<h4 class="font-title-lg text-title-lg text-primary">Financial Settlement Ledger</h4>
+<span class="font-label-eyebrow text-[10px] tracking-widest uppercase bg-surface-container-high px-2 py-0.5 text-on-surface">Payment Settled (Stripe Vault)</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg pt-space-xs">
+<!-- Breakdown Table -->
+<div class="space-y-1.5 font-label-tabular text-body-sm">
+<div class="flex justify-between py-1 bg-surface-container-lowest px-2">
+<span class="text-on-surface-variant">Fabric &amp; Notions Gross</span>
+<span class="text-primary font-medium">€312.00</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-lowest px-2">
+<span class="text-secondary">Guild Member Discount (SAVILE-ROW-2025)</span>
+<span class="text-secondary font-medium">-€30.00</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-lowest px-2">
+<span class="text-on-surface-variant">Courier (Archival Rigid Tube — DHL Express)</span>
+<span class="text-primary font-medium">€0.00 (Complimentary)</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-lowest px-2">
+<span class="text-on-surface-variant">UK Import VAT &amp; DDP Clearance (20%)</span>
+<span class="text-primary font-medium">€47.00 (Included)</span>
+</div>
+</div>
+<!-- Total Calculation Card -->
+<div class="bg-surface-container-lowest p-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-on-surface-variant">Total Settled</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+</div>
+<div class="my-2">
+<span class="font-display-md text-display-md text-primary font-medium leading-none">€282.00</span>
+<p class="font-label-tabular text-[11px] text-on-surface-variant mt-1">DDP Pre-cleared • Transaction #TXN-8849-GB</p>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-label-eyebrow text-[10px] tracking-wider uppercase text-outline">Billing: Coutts Private London</span>
+<span class="font-label-tabular text-[11px] text-secondary font-medium">Zero Duty Due</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+</div>
+<script>
+  // Simple reactive micro-interactions for cutting floor checklist
+  document.addEventListener('DOMContentLoaded', () => {
+    const shearButtons = document.querySelectorAll('.item-shear-btn');
+    shearButtons.forEach(btn => {
+      btn.addEventListener('click', function() {
+        if (!this.classList.contains('bg-secondary')) {
+          this.classList.remove('bg-primary', 'hover:bg-surface-container-highest', 'hover:text-primary');
+          this.classList.add('bg-secondary', 'text-on-secondary');
+          this.innerHTML = '<span class="material-symbols-outlined text-[14px]">check</span><span>Sheared & Inspected</span>';
+        } else {
+          this.classList.add('bg-primary', 'hover:bg-surface-container-highest', 'hover:text-primary');
+          this.classList.remove('bg-secondary', 'text-on-secondary');
+          this.innerHTML = '<span class="material-symbols-outlined text-[14px]">done</span><span>Mark Sheared</span>';
+        }
+      });
+    });
+
+    const markAllBtn = document.getElementById('btn-complete-cut');
+    if (markAllBtn) {
+      markAllBtn.addEventListener('click', () => {
+        shearButtons.forEach(btn => {
+          btn.classList.remove('bg-primary', 'hover:bg-surface-container-highest', 'hover:text-primary');
+          btn.classList.add('bg-secondary', 'text-on-secondary');
+          btn.innerHTML = '<span class="material-symbols-outlined text-[14px]">check</span><span>Sheared & Inspected</span>';
+        });
+        markAllBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">verified</span><span>All Items Sheared & Core Ready</span>';
+        markAllBtn.classList.add('bg-secondary');
+        markAllBtn.classList.remove('bg-primary');
+      });
+    }
+  });
+</script></main></div></body></html>

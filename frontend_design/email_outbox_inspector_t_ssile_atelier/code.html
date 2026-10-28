@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-dim":"#dadad7","secondary-fixed-dim":"#e3c193","secondary-container":"#fedaaa","on-secondary-container":"#795e38","surface-bright":"#f9f9f6","on-error":"#ffffff","surface":"#f9f9f6","error":"#ba1a1a","on-secondary-fixed":"#291800","on-primary-fixed":"#1c1b1b","inverse-primary":"#c8c6c5","on-secondary-fixed-variant":"#5a431f","surface-container":"#eeeeeb","on-primary":"#ffffff","secondary-fixed":"#ffddb1","surface-container-lowest":"#ffffff","surface-variant":"#e2e3e0","error-container":"#ffdad6","inverse-surface":"#2f312f","outline-variant":"#c4c7c7","on-tertiary-fixed-variant":"#474743","tertiary-fixed-dim":"#c8c6c1","on-tertiary-fixed":"#1b1c18","outline":"#747878","inverse-on-surface":"#f1f1ee","tertiary-container":"#1b1c18","surface-container-low":"#f4f4f1","secondary":"#745a34","primary-container":"#1c1b1b","surface-tint":"#5f5e5e","primary-fixed-dim":"#c8c6c1","tertiary":"#000000","on-surface-variant":"#444748","on-background":"#1a1c1b","on-error-container":"#93000a","tertiary-fixed":"#e4e2dc","on-primary-container":"#858383","primary-fixed":"#e5e2e1","on-surface":"#1a1c1b","background":"#f9f9f6","primary":"#000000","surface-container-highest":"#e2e3e0","on-primary-fixed-variant":"#474746","on-tertiary":"#ffffff","surface-container-high":"#e8e8e5","on-secondary":"#ffffff","on-tertiary-container":"#85847f"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-md":"1rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-lg":"2rem","margin-mobile":"1.25rem","gutter":"1.5rem","space-xl":"4rem","space-sm":"0.5rem","margin":"4rem"},fontFamily:{"body-md":["Hanken Grotesk"],"display-lg-mobile":["EB Garamond"],"body-sm":["Hanken Grotesk"],"headline-sm":["EB Garamond"],"label-tabular":["Hanken Grotesk"],"display-lg":["EB Garamond"],"display-md-mobile":["EB Garamond"],"title-lg":["EB Garamond"],"body-lg":["Hanken Grotesk"],"label-eyebrow":["Hanken Grotesk"],"display-md":["EB Garamond"]},fontSize:{"body-md":["0.9375rem",{"lineHeight":"1.5rem","letterSpacing":"0em","fontWeight":"400"}],"display-lg-mobile":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.01em","fontWeight":"400"}],"body-sm":["0.8125rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"400"}],"headline-sm":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"0em","fontWeight":"400"}],"label-tabular":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.02em","fontWeight":"400"}],"display-lg":["3.5rem",{"lineHeight":"4rem","letterSpacing":"-0.015em","fontWeight":"400"}],"display-md-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"0em","fontWeight":"400"}],"title-lg":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"0.01em","fontWeight":"400"}],"body-lg":["1.0625rem",{"lineHeight":"1.75rem","letterSpacing":"-0.005em","fontWeight":"400"}],"label-eyebrow":["0.6875rem",{"lineHeight":"1rem","letterSpacing":"0.2em","fontWeight":"500"}],"display-md":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.01em","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest border-b border-surface-container-highest z-50 flex items-center justify-between px-gutter"><div class="flex items-center gap-space-md"><img alt="Brand logo. - Primary color: #1a1a1a
+- Font: ebGaramond
+- Mode: light
+- Roundness: rounded-lg
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X3kTNj1h3qzEe6SluENtp9S59IjKiEXr3zoP5AFxEJQKwa39q2hn3JzRrJS-pemKnGjTkxZsW93YhV2NCp_upX4NKC6uiNpMedhPynbDQv4ev3CskqYpbmiMmUXNtP_qm3KCZ0xaHqN14hHREhgGJVn2tm0RAZzEAgFDpn_rVbFXGlI63W3ifw2uwZFZk2KHcoY1-t8VaPUt7UyZJ7SqpIkoAdLv6sJxRyGTkBfPQ5K5jnI5Pb5XO4HQ"/><div class="flex flex-col"><span class="font-title-lg text-title-lg font-normal tracking-[0.2em] uppercase text-primary leading-tight">TÈSSILE Atelier</span><span class="font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-on-surface-variant">Curatorial Console &amp; Back-Office</span></div><div class="h-5 w-px bg-surface-container-highest ml-space-xs"></div><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-low border border-surface-container-highest"><span class="material-symbols-outlined text-[16px] text-secondary">location_on</span><select class="bg-transparent font-label-tabular text-label-tabular text-on-surface focus:outline-none cursor-pointer pr-space-xs"><option value="milan">Milan Cutting Floor #01</option><option value="kyoto">Kyoto Notion Depot #02</option></select></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-md px-space-md py-1 border border-surface-container-highest bg-surface-container-lowest"><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-label-tabular text-label-tabular text-on-surface-variant">DB: Synced</span></div><div class="w-px h-3 bg-surface-container-highest"></div><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-label-tabular text-label-tabular text-on-surface-variant">Queue: Active</span></div><div class="w-px h-3 bg-surface-container-highest"></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px] text-secondary">verified_user</span><span class="font-label-tabular text-label-tabular text-on-surface-variant">Argon2 Enclave</span></div></div><div class="flex items-center gap-space-sm pl-space-md border-l border-surface-container-highest"><div class="flex flex-col text-right"><span class="font-label-tabular text-label-tabular text-on-surface font-medium leading-none">Giancarlo Conti</span><span class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-[0.1em] mt-1">Master Cutter &amp; Director</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><button class="flex items-center justify-center p-1 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Operator Options"><span class="material-symbols-outlined text-[18px]">more_vert</span></button></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-72 bg-surface-container-lowest border-r border-surface-container-highest z-40 flex flex-col justify-between overflow-y-auto"><div class="p-space-md space-y-space-lg"><nav class="space-y-space-lg" data-active-classes="bg-primary-container text-on-primary-container font-medium"><div class="space-y-space-xs"><p class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-[0.2em] px-space-sm py-1">COMMAND</p><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="font-body-sm text-body-sm">Dashboard &amp; KPIs</span></a><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="orders" href="#"><span class="font-body-sm text-body-sm">Orders &amp; Cutting Floor</span><span class="font-label-tabular text-[11px] px-1.5 py-0.5 bg-secondary-container text-on-secondary-container border border-secondary/20">14 Pending</span></a></div></div><div class="space-y-space-xs"><p class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-[0.2em] px-space-sm py-1">CATALOG &amp; WEAVES</p><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="products" href="#"><span class="font-body-sm text-body-sm">Products &amp; Rolls</span></a><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="new-product" href="#"><span class="font-body-sm text-body-sm">Add Fabric / Notion</span></a><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="categories" href="#"><span class="font-body-sm text-body-sm">Categories &amp; Weaves</span></a></div></div><div class="space-y-space-xs"><p class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-[0.2em] px-space-sm py-1">LOGISTICS &amp; LEDGER</p><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="inventory" href="#"><span class="font-body-sm text-body-sm">Inventory &amp; Stock Log</span><span class="font-label-tabular text-[11px] px-1.5 py-0.5 bg-surface-container-high text-on-surface border border-outline-variant">3 Low Stock</span></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-2 transition-colors bg-primary-container text-on-primary-container font-medium" data-path="outbox" href="#"><span class="font-body-sm text-body-sm">Outbox &amp; Transmittals</span><span class="font-label-tabular text-[11px] px-1.5 py-0.5 bg-surface-container-high text-on-surface border border-outline-variant">5 Queued</span></a></div></div><div class="space-y-space-xs"><p class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-[0.2em] px-space-sm py-1">SYSTEM</p><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="cms" href="#"><span class="font-body-sm text-body-sm">CMS Pages &amp; Policies</span></a><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="font-body-sm text-body-sm">Atelier Settings &amp; Tax / DDP</span></a></div></div></nav></div><div class="p-space-md border-t border-surface-container-highest bg-surface-container-low space-y-space-sm"><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><p class="font-label-tabular text-[11px] text-on-surface-variant leading-tight">v4.12 Engine • DB 22 Tables • 98/98 Passed</p></div><div class="grid grid-cols-2 gap-space-xs pt-1"><button class="w-full py-1.5 px-2 border border-surface-container-highest bg-surface-container-lowest hover:bg-surface-container hover:text-on-surface font-label-eyebrow text-[10px] tracking-[0.1em] uppercase text-on-surface-variant transition-colors">Valuations</button><button class="w-full py-1.5 px-2 border border-error/30 bg-surface-container-lowest hover:bg-error-container hover:text-on-error-container font-label-eyebrow text-[10px] tracking-[0.1em] uppercase text-error transition-colors">Halt Shears</button></div></div></aside><div class="pl-72"><main class="relative pt-16 bg-surface min-h-screen w-full px-gutter"><div class="flex flex-col w-full pb-space-xl">
+<!-- Top Operational Banner & Headings -->
+<section class="w-full mb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-md">
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase tracking-[0.25em]">Transactional Outbox &amp; Courier Dispatch</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-tabular text-[11px] text-on-surface-variant">Mailer::enqueue Kernel</span>
+</div>
+<h1 class="font-headline-sm text-headline-sm text-primary tracking-tight">Transactional Outbox &amp; Courier Dispatch Mailer</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-3xl">
+          Database-backed transactional email queue. Inspect enqueued messages, verify HTML rendered copy, inspect mailer variables, and trigger worker flush.
+        </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="px-space-md py-2.5 bg-primary text-on-primary font-label-eyebrow text-[11px] uppercase tracking-[0.2em] hover:bg-neutral-800 transition-colors flex items-center gap-space-xs shadow-sm" id="btnFlush">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Force Drain Queue Worker (Flush)</span>
+</button>
+<button class="px-space-md py-2.5 bg-surface-container-low text-on-surface hover:bg-surface-container font-label-eyebrow text-[11px] uppercase tracking-[0.18em] transition-colors flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">auto_delete</span>
+<span>Purge Sent Archives (&gt;90 Days)</span>
+</button>
+<button class="px-space-md py-2.5 bg-surface-container-low text-on-surface hover:bg-surface-container font-label-eyebrow text-[11px] uppercase tracking-[0.18em] transition-colors flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">mark_email_read</span>
+<span>Send Test Dispatch</span>
+</button>
+</div>
+</div>
+<!-- Telemetry Status Badges Strip -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-xs bg-surface-container-low p-space-xs">
+<div class="bg-surface-container-lowest p-space-md flex flex-col justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-[0.15em]">Queue Worker Status</span>
+<div class="flex items-center gap-2 mt-2">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-tabular text-label-tabular font-medium text-primary">ACTIVE (Cron every 60s)</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md flex flex-col justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-[0.15em]">Staged Transmissions</span>
+<div class="flex items-center gap-2 mt-2">
+<span class="font-headline-sm text-headline-sm text-primary leading-none">3</span>
+<span class="font-body-sm text-body-sm text-on-secondary-container bg-secondary-container px-1.5 py-0.5">Pending Drain</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md flex flex-col justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-[0.15em]">Delivered (Past 24 Hours)</span>
+<div class="flex items-center gap-2 mt-2">
+<span class="font-headline-sm text-headline-sm text-primary leading-none">142</span>
+<span class="font-label-tabular text-body-sm text-on-surface-variant">dispatches logged</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md flex flex-col justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-[0.15em]">SES / MTA Bounce Rate</span>
+<div class="flex items-center gap-2 mt-2">
+<span class="font-headline-sm text-headline-sm text-primary leading-none">0.0%</span>
+<span class="font-label-tabular text-[11px] text-on-surface-variant">Postmark Enclave</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Master-Detail 12-Column Grid -->
+<div class="grid grid-cols-12 gap-space-md items-start">
+<!-- LEFT PANE: Enqueued & Sent Register (5 Columns) -->
+<div class="col-span-12 lg:col-span-5 bg-surface-container-lowest p-space-md shadow-sm">
+<!-- Filter Tabs -->
+<div class="flex items-center justify-between gap-1 overflow-x-auto pb-space-sm mb-space-sm bg-surface-container-low p-1">
+<button class="px-space-sm py-1.5 bg-primary text-on-primary font-label-eyebrow text-[10px] uppercase tracking-[0.15em] shrink-0">
+          All (145)
+        </button>
+<button class="px-space-sm py-1.5 text-on-surface hover:bg-surface-container font-label-eyebrow text-[10px] uppercase tracking-[0.15em] shrink-0 flex items-center gap-1">
+          Pending (3)
+          <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</button>
+<button class="px-space-sm py-1.5 text-on-surface hover:bg-surface-container font-label-eyebrow text-[10px] uppercase tracking-[0.15em] shrink-0">
+          Dispatched (138)
+        </button>
+<button class="px-space-sm py-1.5 text-error hover:bg-error-container font-label-eyebrow text-[10px] uppercase tracking-[0.15em] shrink-0">
+          Failed / Retry (4)
+        </button>
+</div>
+<!-- Search Field -->
+<div class="relative mb-space-md">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-on-surface-variant">search</span>
+<input class="w-full bg-surface-container-low pl-9 pr-space-md py-2 text-body-sm font-body-sm text-on-surface focus:outline-none focus:bg-surface-container transition-colors" placeholder="Search recipient email, subject, or Order ID..." type="text"/>
+</div>
+<!-- Queue Ledger List -->
+<div class="space-y-space-xs">
+<!-- Queue Item 1: Selected / Active State -->
+<div class="p-space-md bg-surface-container-low cursor-pointer transition-colors relative overflow-hidden group">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-secondary"></div>
+<div class="flex items-start justify-between gap-space-xs mb-1">
+<span class="font-label-tabular text-[11px] uppercase tracking-wider text-secondary font-medium">QUEUED • Next Cron (10:45 CET)</span>
+<span class="font-label-tabular text-[11px] text-on-surface-variant">4 mins ago</span>
+</div>
+<h2 class="font-title-lg text-[1.125rem] text-primary leading-snug font-normal line-clamp-1 mb-1">
+            TÈSSILE Atelier — Archive Dispatch Confirmed (#TL-2025-8849)
+          </h2>
+<p class="font-label-tabular text-body-sm text-on-surface truncate mb-2">
+            julian.vance@chyping-manor.co.uk
+          </p>
+<div class="flex items-center justify-between text-on-surface-variant font-label-tabular text-[11px] pt-2 bg-surface-container-lowest/60 px-2 py-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">code</span>
+              order_lodged.html
+            </span>
+<span class="font-medium text-primary">#TL-2025-8849</span>
+</div>
+</div>
+<!-- Queue Item 2 -->
+<div class="p-space-md bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-colors group">
+<div class="flex items-start justify-between gap-space-xs mb-1">
+<span class="font-label-tabular text-[11px] uppercase tracking-wider text-on-surface-variant">SENT • Delivered 09:20 CET</span>
+<span class="font-label-tabular text-[11px] text-on-surface-variant">1h 25m ago</span>
+</div>
+<h2 class="font-title-lg text-[1.125rem] text-primary leading-snug font-normal line-clamp-1 mb-1 group-hover:text-secondary transition-colors">
+            TÈSSILE Atelier — Order Status Changed: Shears to Bolt (#TL-2025-8848)
+          </h2>
+<p class="font-label-tabular text-body-sm text-on-surface truncate mb-2">
+            helene.de-valois@studio4b.fr
+          </p>
+<div class="flex items-center justify-between text-on-surface-variant font-label-tabular text-[11px] pt-2 px-2 py-1 bg-surface-container-low">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">code</span>
+              status_updated.html
+            </span>
+<span class="font-medium text-primary">#TL-2025-8848</span>
+</div>
+</div>
+<!-- Queue Item 3 -->
+<div class="p-space-md bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-colors group">
+<div class="flex items-start justify-between gap-space-xs mb-1">
+<span class="font-label-tabular text-[11px] uppercase tracking-wider text-on-surface-variant">SENT • Delivered 08:05 CET</span>
+<span class="font-label-tabular text-[11px] text-on-surface-variant">2h 40m ago</span>
+</div>
+<h2 class="font-title-lg text-[1.125rem] text-primary leading-snug font-normal line-clamp-1 mb-1 group-hover:text-secondary transition-colors">
+            TÈSSILE Atelier — Commercial VAT Invoice &amp; Cloth Provenance (#TL-2025-8842)
+          </h2>
+<p class="font-label-tabular text-body-sm text-on-surface truncate mb-2">
+            savilerowguild@mayfair-tailors.co.uk
+          </p>
+<div class="flex items-center justify-between text-on-surface-variant font-label-tabular text-[11px] pt-2 px-2 py-1 bg-surface-container-low">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">receipt_long</span>
+              invoice_commercial.html
+            </span>
+<span class="font-medium text-primary">#TL-2025-8842</span>
+</div>
+</div>
+<!-- Queue Item 4 -->
+<div class="p-space-md bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-colors group">
+<div class="flex items-start justify-between gap-space-xs mb-1">
+<span class="font-label-tabular text-[11px] uppercase tracking-wider text-on-surface-variant">SENT • Internal Dispatch</span>
+<span class="font-label-tabular text-[11px] text-on-surface-variant">4h 12m ago</span>
+</div>
+<h2 class="font-title-lg text-[1.125rem] text-primary leading-snug font-normal line-clamp-1 mb-1 group-hover:text-secondary transition-colors">
+            Atelier Alert — Low Bolt Stock Warning: Normandy Linen #24-D
+          </h2>
+<p class="font-label-tabular text-body-sm text-on-surface truncate mb-2">
+            contini@tessile-atelier.com
+          </p>
+<div class="flex items-center justify-between text-on-surface-variant font-label-tabular text-[11px] pt-2 px-2 py-1 bg-surface-container-low">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">warning</span>
+              internal_low_stock.html
+            </span>
+<span class="font-medium text-primary">MILAN-INVENTORY</span>
+</div>
+</div>
+<!-- Queue Item 5: Failed State for context -->
+<div class="p-space-md bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-colors group">
+<div class="flex items-start justify-between gap-space-xs mb-1">
+<span class="font-label-tabular text-[11px] uppercase tracking-wider text-error font-medium">FAILED • Retry Count: 2/3</span>
+<span class="font-label-tabular text-[11px] text-on-surface-variant">6h 18m ago</span>
+</div>
+<h2 class="font-title-lg text-[1.125rem] text-primary leading-snug font-normal line-clamp-1 mb-1 group-hover:text-error transition-colors">
+            TÈSSILE Atelier — Dispatch Notice: Hand-Spun Mulberry Silk (#TL-2025-8830)
+          </h2>
+<p class="font-label-tabular text-body-sm text-on-surface truncate mb-2">
+            concierge@hotel-de-crillon-guest.paris
+          </p>
+<div class="flex items-center justify-between text-on-surface-variant font-label-tabular text-[11px] pt-2 px-2 py-1 bg-surface-container-low">
+<span class="flex items-center gap-1 text-error">
+<span class="material-symbols-outlined text-[13px]">sync_problem</span>
+              MTA 550 Mailbox Full
+            </span>
+<span class="font-medium text-primary">#TL-2025-8830</span>
+</div>
+</div>
+</div>
+<!-- Ledger Pagination Footer -->
+<div class="mt-space-md pt-space-md flex items-center justify-between bg-surface-container-low px-space-md py-2">
+<span class="font-label-tabular text-[11px] text-on-surface-variant">Displaying 1–5 of 145 items</span>
+<div class="flex items-center gap-1">
+<button class="p-1 hover:bg-surface-container-highest transition-colors text-on-surface-variant" title="Previous Page">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+<span class="font-label-tabular text-[11px] px-2 text-primary font-medium">Page 1 / 29</span>
+<button class="p-1 hover:bg-surface-container-highest transition-colors text-on-surface-variant" title="Next Page">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- RIGHT PANE: Message Inspector & Rendered Email Preview (7 Columns) -->
+<div class="col-span-12 lg:col-span-7 space-y-space-md">
+<!-- Top Inspector Header / Metadata Panel -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-sm mb-space-sm gap-2">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-tabular text-label-tabular font-medium text-primary">#EM-2025-09142</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-tabular text-[11px] text-secondary font-medium uppercase tracking-wider">State: Mailer::Queued</span>
+</div>
+<!-- Quick actions -->
+<div class="flex items-center gap-space-xs">
+<button class="px-2.5 py-1 text-on-surface hover:bg-surface-container font-label-eyebrow text-[10px] uppercase tracking-[0.1em] transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">send</span>
+              Resend Email
+            </button>
+<button class="px-2.5 py-1 text-on-surface hover:bg-surface-container font-label-eyebrow text-[10px] uppercase tracking-[0.1em] transition-colors flex items-center gap-1" id="btnToggleMime">
+<span class="material-symbols-outlined text-[14px]">terminal</span>
+              Raw MIME
+            </button>
+<button class="px-2.5 py-1 text-on-surface hover:bg-surface-container font-label-eyebrow text-[10px] uppercase tracking-[0.1em] transition-colors flex items-center gap-1" id="btnScrollJson">
+<span class="material-symbols-outlined text-[14px]">data_object</span>
+              Payload
+            </button>
+</div>
+</div>
+<!-- Itemized Metadata Rows -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-space-md gap-y-2 text-body-sm font-label-tabular">
+<div class="bg-surface-container-low p-2">
+<span class="font-label-eyebrow text-[10px] text-on-surface-variant block uppercase tracking-wider mb-0.5">Template Source</span>
+<span class="text-primary truncate block font-medium">templates/emails/order_lodged.blade.php</span>
+</div>
+<div class="bg-surface-container-low p-2">
+<span class="font-label-eyebrow text-[10px] text-on-surface-variant block uppercase tracking-wider mb-0.5">Recipient Identity</span>
+<span class="text-primary truncate block font-medium">Lord Julian Vance &lt;julian.vance@chyping-manor.co.uk&gt;</span>
+</div>
+<div class="bg-surface-container-low p-2">
+<span class="font-label-eyebrow text-[10px] text-on-surface-variant block uppercase tracking-wider mb-0.5">Canonical Subject Header</span>
+<span class="text-primary truncate block font-medium">TÈSSILE Atelier — Archive Dispatch Confirmed (#TL-2025-8849)</span>
+</div>
+<div class="bg-surface-container-low p-2">
+<span class="font-label-eyebrow text-[10px] text-on-surface-variant block uppercase tracking-wider mb-0.5">MTA Dispatch Engine</span>
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="text-primary truncate font-medium">Postmark / Amazon SES Transmit Engine</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Mode Selector Tabs: Rendered HTML vs Raw HTML vs JSON Payload -->
+<div class="flex items-center justify-between bg-surface-container-low p-1">
+<div class="flex items-center gap-1">
+<button class="px-space-md py-1.5 bg-surface-container-lowest text-primary font-label-eyebrow text-[10px] uppercase tracking-[0.2em] shadow-sm transition-colors flex items-center gap-1.5" id="tabRendered">
+<span class="material-symbols-outlined text-[14px]">visibility</span>
+            Rendered HTML Preview
+          </button>
+<button class="px-space-md py-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-eyebrow text-[10px] uppercase tracking-[0.2em] transition-colors flex items-center gap-1.5" id="tabRawHtml">
+<span class="material-symbols-outlined text-[14px]">html</span>
+            Raw HTML Code
+          </button>
+<button class="px-space-md py-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-eyebrow text-[10px] uppercase tracking-[0.2em] transition-colors flex items-center gap-1.5" id="tabJson">
+<span class="material-symbols-outlined text-[14px]">data_object</span>
+            JSON Data Payload
+          </button>
+</div>
+<div class="hidden sm:flex items-center gap-2 pr-2 text-on-surface-variant font-label-tabular text-[11px]">
+<span>Viewport: 640px (Email Standard)</span>
+<span class="w-1 h-1 rounded-full bg-on-surface-variant"></span>
+<span>DPI: 100%</span>
+</div>
+</div>
+<!-- View Containers -->
+<!-- 1. RENDERED EMAIL PREVIEW VIEW -->
+<div class="bg-surface-container-low p-space-md sm:p-space-lg flex justify-center" id="viewRendered">
+<!-- Luxury HTML Email Container (Simulated Mail Client Canvas) -->
+<div class="w-full max-w-[620px] bg-surface-container-lowest p-space-lg sm:p-space-xl shadow-md space-y-space-lg text-primary">
+<!-- Email Brand Header -->
+<div class="text-center pb-space-md space-y-2">
+<h2 class="font-display-lg text-[1.75rem] sm:text-[2rem] tracking-[0.25em] uppercase font-normal text-primary">
+              TÈSSILE Atelier
+            </h2>
+<p class="font-label-eyebrow text-[10px] tracking-[0.3em] uppercase text-on-surface-variant">
+              Via Gesù 14, Quadrilatero • Milano
+            </p>
+<div class="w-12 h-px bg-secondary mx-auto mt-space-sm opacity-60"></div>
+</div>
+<!-- Hero Headline & Salutation -->
+<div class="space-y-space-sm">
+<div class="font-label-eyebrow text-label-eyebrow text-secondary uppercase tracking-[0.2em]">
+              Archive Dispatch Notice • Ref #TL-2025-8849
+            </div>
+<h3 class="font-display-md text-headline-sm sm:text-display-md text-primary font-normal leading-tight">
+              Archive Dispatch Confirmed
+            </h3>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              Lord Julian Vance, your bespoke tailoring consignment has been lodged on our Milan cutting bench. Master Cutter Giancarlo Conti has commenced the preparatory tension inspection across the raw selvedge.
+            </p>
+</div>
+<!-- Itemized Cloth Table -->
+<div class="space-y-space-xs bg-surface-container-low p-space-md">
+<div class="flex items-center justify-between pb-2">
+<span class="font-label-eyebrow text-[10px] text-on-surface-variant uppercase tracking-[0.18em]">Custody Item</span>
+<span class="font-label-eyebrow text-[10px] text-on-surface-variant uppercase tracking-[0.18em]">Line Total</span>
+</div>
+<!-- Item 1 -->
+<div class="flex items-center gap-space-md py-space-sm bg-surface-container-lowest p-space-sm">
+<img class="w-16 h-16 object-cover bg-surface-container shrink-0" data-alt="Macro tactile photograph of rich natural Normandy washed linen fabric draped gently on an untreated raw cedar wood workbench in a Milan tailor atelier. Soft moody natural north light with crisp fiber weave texture visible." src="https://lh3.googleusercontent.com/aida-public/AB6AXuByX1Uvx2oEBhzl35vjc6I8U4kkaRh0llMLe6uhHR_WaS1IXQYBJXjgVzC2yJn3iBnwbvUbjlAOnBQL4yShInIap0Sk7tazu_htNgNhOO4EsM4xxWW_NgVvTQEO1z_18r2MAzL9-nph8GS1_d5xN4Qf35YsnABTI71aaL99OR78Cr0edlfevq8IAdpvl0RAg-LZKIjJS30W_7-xGsphmRLVyJ1t059cdn8tTegohWxey8ow5LeVCEcy"/>
+<div class="flex-1 min-w-0">
+<h4 class="font-title-lg text-title-lg text-primary font-normal truncate">Normandy Washed Linen</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bolt #24-D • Cut length: 3.00 meters • Ecru Plain Weave</p>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-tabular text-body-md font-medium text-primary">€195.00</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center gap-space-md py-space-sm bg-surface-container-lowest p-space-sm">
+<img class="w-16 h-16 object-cover bg-surface-container shrink-0" data-alt="Close up photography of dark charcoal Biella virgin super 130s worsted wool cloth resting neatly folded on an archival measuring table. Sharp weave lines, luxurious sheen, quiet luxury studio ambiance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrhYQG9K99gHXEyrkhfN6p8CM91B8AoXxwKu5N2Un4CLIKo2XlnFdcjSb3uwcjDGPXoCO4FGzsmsFiGYwDcQl23QdFuR_pj4uBAoZWHN6ujW126ZEu0qUp52XGde4-58VVlisHyxdd5OZdtpo3pzdxwkA7lLMJkRC63-RbA6u3CfAIylCrkOq-Bm0TgO-ZW6rCm166rZYuePBUsoX0MkPROEiZTca7AP5PY0lnCA4B807LaS4ymBn2"/>
+<div class="flex-1 min-w-0">
+<h4 class="font-title-lg text-title-lg text-primary font-normal truncate">Biella Super 130s Worsted Wool</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bolt #09-W • Cut length: 2.50 meters • Midnight Twill</p>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-tabular text-body-md font-medium text-primary">€117.00</span>
+</div>
+</div>
+<!-- Totals Ledger -->
+<div class="pt-space-sm space-y-1 font-label-tabular text-body-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span>Subtotal (5.50m Total Fabric)</span>
+<span>€312.00</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Atelier Secure Cylinder Packaging &amp; DDP Courier</span>
+<span class="text-secondary font-medium">Complimentary</span>
+</div>
+<div class="flex justify-between text-primary font-medium text-body-lg pt-1">
+<span class="font-headline-sm text-title-lg">Consignment Total</span>
+<span class="font-label-tabular text-title-lg">€312.00 EUR</span>
+</div>
+</div>
+</div>
+<!-- Cutting Room Directives Box -->
+<div class="p-space-md bg-surface-container-low flex items-start gap-space-md">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">content_cut</span>
+<div class="space-y-1">
+<span class="font-label-eyebrow text-[10px] text-secondary uppercase tracking-[0.2em] font-medium">Cutting Room Directive</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+                Sheared on 148cm rigid core rolls with intact selvage marking. Packaged in moisture-sealed cedar-wood archival sleeves for inter-continental transit.
+              </p>
+</div>
+</div>
+<!-- Primary Call to Action Button -->
+<div class="text-center pt-space-xs">
+<button class="w-full sm:w-auto px-space-xl py-3.5 bg-primary text-on-primary font-label-eyebrow text-label-eyebrow uppercase tracking-[0.25em] hover:bg-neutral-800 transition-colors shadow-sm">
+              View Live Custody Tracker
+            </button>
+<p class="font-label-tabular text-[11px] text-on-surface-variant mt-2">
+              Requires cryptographic patron authentication or SMS 2FA passcode.
+            </p>
+</div>
+<!-- Email Atelier Footer -->
+<div class="pt-space-md space-y-2 text-center text-on-surface-variant font-label-tabular text-[11px] leading-relaxed">
+<p>
+              TÈSSILE Atelier S.r.l. • Registrazione Imprese Milano n. 09328490152 • Codice Fiscale IT09328490152<br/>
+              Laboratorio Taglio: Via Gesù 14, 20121 Milano, Lombardia • Contatto: atelier@tessile-atelier.com
+            </p>
+<p class="text-[10px] opacity-75">
+              This transmission was automatically dispatched by TÈSSILE Atelier Mailer Node via TLS 1.3 cryptographic courier dispatch. You received this regarding active order #TL-2025-8849.
+            </p>
+</div>
+</div>
+</div>
+<!-- 2. RAW HTML CODE VIEW (Hidden by default) -->
+<div class="hidden bg-surface-container-lowest p-space-md" id="viewRawHtml">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm bg-surface-container-low p-2">
+<span class="font-label-tabular text-[11px] text-on-surface-variant">Output size: 14.8 KB • UTF-8 Single-Part HTML</span>
+<button class="text-secondary hover:text-primary font-label-eyebrow text-[10px] uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">content_copy</span> Copy Raw HTML
+          </button>
+</div>
+<pre class="bg-surface-container-low p-space-md text-[12px] font-label-tabular text-on-surface overflow-x-auto leading-relaxed select-all"><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en"&gt;
+&lt;head&gt;
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+  &lt;title&gt;T&amp;Egrave;SSILE Atelier &amp;mdash; Archive Dispatch Confirmed&lt;/title&gt;
+  &lt;style type="text/css"&gt;
+    body { margin: 0; padding: 0; background-color: #f9f9f6; font-family: 'Hanken Grotesk', -apple-system, sans-serif; color: #1a1c1b; }
+    .brand-mark { font-family: 'EB Garamond', serif; letter-spacing: 0.25em; text-transform: uppercase; font-size: 28px; }
+    .directive-card { background-color: #eeeeeb; padding: 16px; margin: 20px 0; }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body style="margin: 0; padding: 40px 0; background-color: #f9f9f6;"&gt;
+  &lt;table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"&gt;
+    &lt;tr&gt;
+      &lt;td align="center"&gt;
+        &lt;table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" style="background-color: #ffffff; padding: 48px;"&gt;
+          &lt;tr&gt;
+            &lt;td align="center" style="padding-bottom: 24px;"&gt;
+              &lt;h1 class="brand-mark" style="margin: 0; color: #000000;"&gt;T&amp;Egrave;SSILE Atelier&lt;/h1&gt;
+              &lt;p style="margin: 6px 0 0 0; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #745a34;"&gt;Milano Cutting Bench&lt;/p&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td style="padding: 24px 0;"&gt;
+              &lt;h2 style="font-family: 'EB Garamond', serif; font-size: 24px; font-weight: normal; margin: 0 0 12px 0;"&gt;Archive Dispatch Confirmed&lt;/h2&gt;
+              &lt;p style="font-size: 15px; line-height: 24px; color: #444748; margin: 0;"&gt;
+                Lord Julian Vance, your bespoke tailoring order #TL-2025-8849 has been lodged on our Milan cutting bench.
+              &lt;/p&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/table&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+<!-- 3. RAW MIME HEADERS MODAL / INLINE DRAWER (Hidden toggle) -->
+<div class="hidden bg-surface-container-lowest p-space-md" id="viewMime">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm bg-surface-container-low p-2">
+<span class="font-label-tabular text-[11px] text-on-surface-variant">RFC 2822 Transport Envelopes &amp; DKIM Checksum</span>
+<span class="font-label-tabular text-[11px] text-secondary font-medium">SPF: PASS • DKIM: PASS (2048-bit)</span>
+</div>
+<pre class="bg-surface-container-low p-space-md text-[11px] font-label-tabular text-on-surface overflow-x-auto leading-relaxed"><code>Received: by mail-ses.eu-central-1.amazonaws.com with SMTP id m784-postmark-outbox;
+        Tue, 28 Oct 2025 10:41:02 +0100 (CET)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=tessile-atelier.com;
+        s=ses2024; t=1761644462;
+        h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type;
+        bh=9X1f8mR...qZ=;
+        b=Nf7x...==
+From: "TÈSSILE Atelier Dispatch" &lt;noreply@tessile-atelier.com&gt;
+To: "Lord Julian Vance" &lt;julian.vance@chyping-manor.co.uk&gt;
+Subject: TÈSSILE Atelier — Archive Dispatch Confirmed (#TL-2025-8849)
+Date: Tue, 28 Oct 2025 10:41:00 +0100
+Message-ID: &lt;EM-2025-09142.prod-milan01@mailer.tessile-atelier.com&gt;
+X-Atelier-Worker-ID: queue:shears-dispatch:worker-04
+X-Atelier-Roll-Ref: BOLT-24D-NORM-ECRU</code></pre>
+</div>
+<!-- 4. BOTTOM DATA DRAWER: Collapsible JSON Payload -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm" id="sectionJson">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">data_object</span>
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-primary">Blade Mailer Template Variables ($payload)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-tabular text-[11px] text-on-surface-variant">5 Keys Processed</span>
+<button class="p-1 hover:bg-surface-container-high transition-colors text-on-surface-variant" id="btnCopyJson" title="Copy JSON">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md overflow-x-auto">
+<pre class="font-label-tabular text-[12px] leading-relaxed text-on-surface"><code>{
+  "order_id": 8849,
+  "order_reference": "#TL-2025-8849",
+  "customer_name": "Lord Julian Vance",
+  "customer_salutation": "Lord Julian Vance",
+  "customer_email": "julian.vance@chyping-manor.co.uk",
+  "total": "€312.00",
+  "currency": "EUR",
+  "items": [
+    {
+      "sku": "FAB-LIN-NORM-024",
+      "name": "Normandy Washed Linen",
+      "bolt_id": "24-D",
+      "meters": 3.00,
+      "width_cm": 148,
+      "unit_price": 65.00,
+      "line_total": "€195.00"
+    },
+    {
+      "sku": "FAB-WOL-BIEL-009",
+      "name": "Biella Super 130s Worsted Wool",
+      "bolt_id": "09-W",
+      "meters": 2.50,
+      "width_cm": 150,
+      "unit_price": 46.80,
+      "line_total": "€117.00"
+    }
+  ],
+  "cutting_directive": "Continuous Cylindrical Tube",
+  "packaging": "Archival Cedar-Wood Moisture Sealed Core",
+  "master_cutter": "Giancarlo Conti",
+  "depot": "Milan Cutting Floor #01",
+  "enqueued_at": "2025-10-28T10:41:02+01:00",
+  "scheduled_worker_flush": "2025-10-28T10:45:00+01:00"
+}</code></pre>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant font-label-tabular text-[11px]">
+<span>Schema: TÈSSILE\Mailer\Schemas\OrderLodgedPayload v2.1</span>
+<span class="text-secondary font-medium">Valid against MailerEnvelopeInterface</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initOutboxInspector() {
+    const tabRendered = document.getElementById('tabRendered');
+    const tabRawHtml = document.getElementById('tabRawHtml');
+    const tabJson = document.getElementById('tabJson');
+    const btnToggleMime = document.getElementById('btnToggleMime');
+    const btnScrollJson = document.getElementById('btnScrollJson');
+    const btnFlush = document.getElementById('btnFlush');
+    const btnCopyJson = document.getElementById('btnCopyJson');
+
+    const viewRendered = document.getElementById('viewRendered');
+    const viewRawHtml = document.getElementById('viewRawHtml');
+    const viewMime = document.getElementById('viewMime');
+    const sectionJson = document.getElementById('sectionJson');
+
+    function resetTabs() {
+      [tabRendered, tabRawHtml, tabJson].forEach(btn => {
+        if (!btn) return;
+        btn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        btn.classList.add('text-on-surface-variant');
+      });
+    }
+
+    if (tabRendered) {
+      tabRendered.addEventListener('click', () => {
+        resetTabs();
+        tabRendered.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        tabRendered.classList.remove('text-on-surface-variant');
+        viewRendered.classList.remove('hidden');
+        viewRawHtml.classList.add('hidden');
+        viewMime.classList.add('hidden');
+      });
+    }
+
+    if (tabRawHtml) {
+      tabRawHtml.addEventListener('click', () => {
+        resetTabs();
+        tabRawHtml.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        tabRawHtml.classList.remove('text-on-surface-variant');
+        viewRendered.classList.add('hidden');
+        viewRawHtml.classList.remove('hidden');
+        viewMime.classList.add('hidden');
+      });
+    }
+
+    if (tabJson) {
+      tabJson.addEventListener('click', () => {
+        resetTabs();
+        tabJson.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        tabJson.classList.remove('text-on-surface-variant');
+        viewRendered.classList.remove('hidden');
+        viewRawHtml.classList.add('hidden');
+        viewMime.classList.add('hidden');
+        sectionJson.scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+
+    if (btnToggleMime) {
+      btnToggleMime.addEventListener('click', () => {
+        viewMime.classList.toggle('hidden');
+        if (!viewMime.classList.contains('hidden')) {
+          viewMime.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    }
+
+    if (btnScrollJson) {
+      btnScrollJson.addEventListener('click', () => {
+        sectionJson.scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+
+    if (btnFlush) {
+      btnFlush.addEventListener('click', () => {
+        const originalText = btnFlush.innerHTML;
+        btnFlush.innerHTML = '<span class="material-symbols-outlined text-[16px] animate-spin">refresh</span><span>Draining Enclave Queue...</span>';
+        setTimeout(() => {
+          btnFlush.innerHTML = '<span class="material-symbols-outlined text-[16px] text-secondary">check</span><span>3 Messages Dispatched</span>';
+          setTimeout(() => {
+            btnFlush.innerHTML = originalText;
+          }, 2400);
+        }, 1200);
+      });
+    }
+
+    if (btnCopyJson) {
+      btnCopyJson.addEventListener('click', () => {
+        const originalIcon = btnCopyJson.innerHTML;
+        btnCopyJson.innerHTML = '<span class="material-symbols-outlined text-[16px] text-secondary">check</span>';
+        setTimeout(() => {
+          btnCopyJson.innerHTML = originalIcon;
+        }, 1800);
+      });
+    }
+  })();
+</script></main></div></body></html>

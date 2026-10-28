@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-dim":"#dadad7","secondary-fixed-dim":"#e3c193","secondary-container":"#fedaaa","on-secondary-container":"#795e38","surface-bright":"#f9f9f6","on-error":"#ffffff","surface":"#f9f9f6","error":"#ba1a1a","on-secondary-fixed":"#291800","on-primary-fixed":"#1c1b1b","inverse-primary":"#c8c6c5","on-secondary-fixed-variant":"#5a431f","surface-container":"#eeeeeb","on-primary":"#ffffff","secondary-fixed":"#ffddb1","surface-container-lowest":"#ffffff","surface-variant":"#e2e3e0","error-container":"#ffdad6","inverse-surface":"#2f312f","outline-variant":"#c4c7c7","on-tertiary-fixed-variant":"#474743","tertiary-fixed-dim":"#c8c6c1","on-tertiary-fixed":"#1b1c18","outline":"#747878","inverse-on-surface":"#f1f1ee","tertiary-container":"#1b1c18","surface-container-low":"#f4f4f1","secondary":"#745a34","primary-container":"#1c1b1b","surface-tint":"#5f5e5e","primary-fixed-dim":"#c8c6c1","tertiary":"#000000","on-surface-variant":"#444748","on-background":"#1a1c1b","on-error-container":"#93000a","tertiary-fixed":"#e4e2dc","on-primary-container":"#858383","primary-fixed":"#e5e2e1","on-surface":"#1a1c1b","background":"#f9f9f6","primary":"#000000","surface-container-highest":"#e2e3e0","on-primary-fixed-variant":"#474746","on-tertiary":"#ffffff","surface-container-high":"#e8e8e5","on-secondary":"#ffffff","on-tertiary-container":"#85847f"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-md":"1rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-lg":"2rem","margin-mobile":"1.25rem","gutter":"1.5rem","space-xl":"4rem","space-sm":"0.5rem","margin":"4rem"},fontFamily:{"body-md":["Hanken Grotesk"],"display-lg-mobile":["EB Garamond"],"body-sm":["Hanken Grotesk"],"headline-sm":["EB Garamond"],"label-tabular":["Hanken Grotesk"],"display-lg":["EB Garamond"],"display-md-mobile":["EB Garamond"],"title-lg":["EB Garamond"],"body-lg":["Hanken Grotesk"],"label-eyebrow":["Hanken Grotesk"],"display-md":["EB Garamond"]},fontSize:{"body-md":["0.9375rem",{"lineHeight":"1.5rem","letterSpacing":"0em","fontWeight":"400"}],"display-lg-mobile":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.01em","fontWeight":"400"}],"body-sm":["0.8125rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"400"}],"headline-sm":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"0em","fontWeight":"400"}],"label-tabular":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.02em","fontWeight":"400"}],"display-lg":["3.5rem",{"lineHeight":"4rem","letterSpacing":"-0.015em","fontWeight":"400"}],"display-md-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"0em","fontWeight":"400"}],"title-lg":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"0.01em","fontWeight":"400"}],"body-lg":["1.0625rem",{"lineHeight":"1.75rem","letterSpacing":"-0.005em","fontWeight":"400"}],"label-eyebrow":["0.6875rem",{"lineHeight":"1rem","letterSpacing":"0.2em","fontWeight":"500"}],"display-md":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.01em","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest border-b border-surface-container-highest z-50 flex items-center justify-between px-gutter"><div class="flex items-center gap-space-md"><img alt="Brand logo. - Primary color: #1a1a1a
+- Font: ebGaramond
+- Mode: light
+- Roundness: rounded-lg
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X3kTNj1h3qzEe6SluENtp9S59IjKiEXr3zoP5AFxEJQKwa39q2hn3JzRrJS-pemKnGjTkxZsW93YhV2NCp_upX4NKC6uiNpMedhPynbDQv4ev3CskqYpbmiMmUXNtP_qm3KCZ0xaHqN14hHREhgGJVn2tm0RAZzEAgFDpn_rVbFXGlI63W3ifw2uwZFZk2KHcoY1-t8VaPUt7UyZJ7SqpIkoAdLv6sJxRyGTkBfPQ5K5jnI5Pb5XO4HQ"/><div class="flex flex-col"><span class="font-title-lg text-title-lg font-normal tracking-[0.2em] uppercase text-primary leading-tight">TÈSSILE Atelier</span><span class="font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-on-surface-variant">Curatorial Console &amp; Back-Office</span></div><div class="h-5 w-px bg-surface-container-highest ml-space-xs"></div><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-low border border-surface-container-highest"><span class="material-symbols-outlined text-[16px] text-secondary">location_on</span><select class="bg-transparent font-label-tabular text-label-tabular text-on-surface focus:outline-none cursor-pointer pr-space-xs"><option value="milan">Milan Cutting Floor #01</option><option value="kyoto">Kyoto Notion Depot #02</option></select></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-md px-space-md py-1 border border-surface-container-highest bg-surface-container-lowest"><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-label-tabular text-label-tabular text-on-surface-variant">DB: Synced</span></div><div class="w-px h-3 bg-surface-container-highest"></div><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-label-tabular text-label-tabular text-on-surface-variant">Queue: Active</span></div><div class="w-px h-3 bg-surface-container-highest"></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px] text-secondary">verified_user</span><span class="font-label-tabular text-label-tabular text-on-surface-variant">Argon2 Enclave</span></div></div><div class="flex items-center gap-space-sm pl-space-md border-l border-surface-container-highest"><div class="flex flex-col text-right"><span class="font-label-tabular text-label-tabular text-on-surface font-medium leading-none">Giancarlo Conti</span><span class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-[0.1em] mt-1">Master Cutter &amp; Director</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><button class="flex items-center justify-center p-1 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Operator Options"><span class="material-symbols-outlined text-[18px]">more_vert</span></button></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-72 bg-surface-container-lowest border-r border-surface-container-highest z-40 flex flex-col justify-between overflow-y-auto"><div class="p-space-md space-y-space-lg"><nav class="space-y-space-lg" data-active-classes="bg-primary-container text-on-primary-container font-medium"><div class="space-y-space-xs"><p class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-[0.2em] px-space-sm py-1">COMMAND</p><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="font-body-sm text-body-sm">Dashboard &amp; KPIs</span></a><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="orders" href="#"><span class="font-body-sm text-body-sm">Orders &amp; Cutting Floor</span><span class="font-label-tabular text-[11px] px-1.5 py-0.5 bg-secondary-container text-on-secondary-container border border-secondary/20">14 Pending</span></a></div></div><div class="space-y-space-xs"><p class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-[0.2em] px-space-sm py-1">CATALOG &amp; WEAVES</p><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="products" href="#"><span class="font-body-sm text-body-sm">Products &amp; Rolls</span></a><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="new-product" href="#"><span class="font-body-sm text-body-sm">Add Fabric / Notion</span></a><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="categories" href="#"><span class="font-body-sm text-body-sm">Categories &amp; Weaves</span></a></div></div><div class="space-y-space-xs"><p class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-[0.2em] px-space-sm py-1">LOGISTICS &amp; LEDGER</p><div class="space-y-0.5"><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="inventory" href="#"><span class="font-body-sm text-body-sm">Inventory &amp; Stock Log</span><span class="font-label-tabular text-[11px] px-1.5 py-0.5 bg-surface-container-high text-on-surface border border-outline-variant">3 Low Stock</span></a><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="outbox" href="#"><span class="font-body-sm text-body-sm">Outbox &amp; Transmittals</span><span class="font-label-tabular text-[11px] px-1.5 py-0.5 bg-surface-container-high text-on-surface border border-outline-variant">5 Queued</span></a></div></div><div class="space-y-space-xs"><p class="font-label-eyebrow text-label-eyebrow text-on-surface-variant uppercase tracking-[0.2em] px-space-sm py-1">SYSTEM</p><div class="space-y-0.5"><a aria-current="page" class="flex items-center justify-between px-space-sm py-2 transition-colors bg-primary-container text-on-primary-container font-medium" data-path="cms" href="#"><span class="font-body-sm text-body-sm">CMS Pages &amp; Policies</span></a><a class="flex items-center justify-between px-space-sm py-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="font-body-sm text-body-sm">Atelier Settings &amp; Tax / DDP</span></a></div></div></nav></div><div class="p-space-md border-t border-surface-container-highest bg-surface-container-low space-y-space-sm"><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><p class="font-label-tabular text-[11px] text-on-surface-variant leading-tight">v4.12 Engine • DB 22 Tables • 98/98 Passed</p></div><div class="grid grid-cols-2 gap-space-xs pt-1"><button class="w-full py-1.5 px-2 border border-surface-container-highest bg-surface-container-lowest hover:bg-surface-container hover:text-on-surface font-label-eyebrow text-[10px] tracking-[0.1em] uppercase text-on-surface-variant transition-colors">Valuations</button><button class="w-full py-1.5 px-2 border border-error/30 bg-surface-container-lowest hover:bg-error-container hover:text-on-error-container font-label-eyebrow text-[10px] tracking-[0.1em] uppercase text-error transition-colors">Halt Shears</button></div></div></aside><div class="pl-72"><main class="relative pt-16 bg-surface min-h-screen w-full px-gutter"><div class="flex flex-col w-full pb-space-xl">
+<!-- Top Command & Action Bar -->
+<section class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md py-space-lg">
+<div class="space-y-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant">Archival System • Production v4.12</span>
+</div>
+<h1 class="font-display-md text-display-md text-primary tracking-tight">Headless CMS &amp; Atelier Engine Configuration</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Manage editorial content blocks, shipping carrier matrices, automated tax matching rules, and promotional coupons.
+      </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="group relative px-space-md py-2.5 bg-surface-container hover:bg-surface-container-high text-primary font-label-eyebrow text-label-eyebrow uppercase transition-colors flex items-center gap-2" id="btn-purge-cache">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary transition-colors">cached</span>
+<span>Clear Redis Edge Cache</span>
+</button>
+<button class="px-space-md py-2.5 bg-primary hover:bg-primary-container text-on-primary font-label-eyebrow text-label-eyebrow uppercase transition-colors flex items-center gap-2 shadow-sm" id="btn-save-all">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>Save All Configurations</span>
+</button>
+</div>
+</section>
+<!-- Navigation Rail / View Tabs -->
+<div class="flex items-center gap-space-md overflow-x-auto py-2 bg-surface">
+<button class="cms-nav-tab pb-2 font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-primary font-semibold flex items-center gap-2" data-tab="cms">
+<span>CMS Pages &amp; Blocks</span>
+<span class="px-1.5 py-0.5 text-[10px] bg-secondary-container text-on-secondary-container rounded-sm">12</span>
+</button>
+<button class="cms-nav-tab pb-2 font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors" data-tab="settings">
+<span>Global Atelier Settings</span>
+</button>
+<button class="cms-nav-tab pb-2 font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors" data-tab="tax">
+<span>Tax &amp; DDP Rates (EU/UK/US)</span>
+</button>
+<button class="cms-nav-tab pb-2 font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors" data-tab="coupons">
+<span>Coupons &amp; Guild Pass</span>
+</button>
+</div>
+<!-- Main Viewport: Tab 1 Content Block Orchestrator -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start mt-space-lg">
+<!-- Left Column: Content Page Directory (4 cols) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">menu_book</span>
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant">Archived Blueprints</span>
+</div>
+<span class="font-label-tabular text-body-sm text-on-surface-variant">5 Canonical</span>
+</div>
+<!-- CMS Pages List -->
+<div class="flex flex-col gap-1 mt-space-sm" id="page-directory-list">
+<!-- Active Page Item -->
+<div class="p-space-md bg-surface-container-low transition-colors cursor-pointer group" data-page-slug="about">
+<div class="flex items-start justify-between">
+<div class="space-y-1">
+<p class="font-title-lg text-title-lg text-primary group-hover:text-secondary transition-colors">About Atelier &amp; Heritage</p>
+<div class="flex items-center gap-2">
+<span class="font-label-tabular text-[11px] text-on-surface-variant">/page/about</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-tabular text-[11px] text-secondary">6 Blocks</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 bg-surface-container-highest text-primary font-label-eyebrow text-[10px] uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Live
+              </span>
+</div>
+</div>
+<!-- Page Item -->
+<div class="p-space-md hover:bg-surface-container-low transition-colors cursor-pointer group" data-page-slug="shipping-returns">
+<div class="flex items-start justify-between">
+<div class="space-y-1">
+<p class="font-title-lg text-title-lg text-primary group-hover:text-secondary transition-colors">Shipping, Returns &amp; Custody</p>
+<div class="flex items-center gap-2">
+<span class="font-label-tabular text-[11px] text-on-surface-variant">/page/shipping-returns</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-tabular text-[11px] text-on-surface-variant">8 Blocks</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 bg-surface-container-highest text-on-surface-variant font-label-eyebrow text-[10px] uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Live
+              </span>
+</div>
+</div>
+<!-- Page Item -->
+<div class="p-space-md hover:bg-surface-container-low transition-colors cursor-pointer group" data-page-slug="fabric-glossary">
+<div class="flex items-start justify-between">
+<div class="space-y-1">
+<p class="font-title-lg text-title-lg text-primary group-hover:text-secondary transition-colors">Material Guide &amp; Glossary</p>
+<div class="flex items-center gap-2">
+<span class="font-label-tabular text-[11px] text-on-surface-variant">/page/fabric-glossary</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-tabular text-[11px] text-on-surface-variant">10 Blocks</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 bg-surface-container-highest text-on-surface-variant font-label-eyebrow text-[10px] uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Live
+              </span>
+</div>
+</div>
+<!-- Page Item -->
+<div class="p-space-md hover:bg-surface-container-low transition-colors cursor-pointer group" data-page-slug="faq">
+<div class="flex items-start justify-between">
+<div class="space-y-1">
+<p class="font-title-lg text-title-lg text-primary group-hover:text-secondary transition-colors">FAQ &amp; Procedural Protocols</p>
+<div class="flex items-center gap-2">
+<span class="font-label-tabular text-[11px] text-on-surface-variant">/page/faq</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-tabular text-[11px] text-on-surface-variant">5 Blocks</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 bg-surface-container-highest text-on-surface-variant font-label-eyebrow text-[10px] uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Live
+              </span>
+</div>
+</div>
+<!-- Page Item -->
+<div class="p-space-md hover:bg-surface-container-low transition-colors cursor-pointer group" data-page-slug="privacy">
+<div class="flex items-start justify-between">
+<div class="space-y-1">
+<p class="font-title-lg text-title-lg text-primary group-hover:text-secondary transition-colors">Privacy &amp; Archival Vault</p>
+<div class="flex items-center gap-2">
+<span class="font-label-tabular text-[11px] text-on-surface-variant">/page/privacy</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-tabular text-[11px] text-on-surface-variant">4 Blocks</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 bg-surface-container-highest text-on-surface-variant font-label-eyebrow text-[10px] uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Live
+              </span>
+</div>
+</div>
+</div>
+<button class="w-full mt-space-md py-3 px-space-md bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-eyebrow text-label-eyebrow uppercase transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Create New CMS Page</span>
+</button>
+</div>
+<!-- Quick Edge CDN Diagnostics Card -->
+<div class="p-space-md bg-surface-container-low shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant">Edge Invalidation Graph</span>
+<span class="font-label-tabular text-body-sm text-secondary">0.08ms Latency</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          SSR blocks are hydrated with high-velocity stale-while-revalidate TTL across 42 POPs.
+        </p>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-11/12"></div>
+</div>
+<div class="flex justify-between items-center text-[11px] font-label-tabular text-on-surface-variant pt-1">
+<span>Purged: 18m ago</span>
+<span>Status: Warm</span>
+</div>
+</div>
+</aside>
+<!-- Right Column: Modular Content Block Editor (8 cols) -->
+<main class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Page Metadata Form Panel -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="space-y-0.5">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant">Canonical Descriptor</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">About Atelier &amp; Heritage</h2>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-space-sm py-1.5 bg-surface-container hover:bg-surface-container-high font-label-eyebrow text-[11px] uppercase text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">visibility</span>
+<span>Preview SSR</span>
+</button>
+<button class="px-space-sm py-1.5 bg-surface-container hover:bg-surface-container-high font-label-eyebrow text-[11px] uppercase text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">history</span>
+<span>Revisions</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<div class="space-y-1">
+<label class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant block">Page Title (Editorial H1)</label>
+<input class="w-full bg-surface-container-low px-space-sm py-2 font-body-md text-body-md text-primary focus:outline-none focus:bg-surface-container transition-colors" type="text" value="About Atelier &amp; Heritage"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant block">URL Slug</label>
+<div class="flex items-center bg-surface-container-low px-space-sm py-2">
+<span class="font-label-tabular text-body-sm text-on-surface-variant mr-1">/page/</span>
+<input class="w-full bg-transparent font-body-md text-body-md text-primary focus:outline-none" type="text" value="about"/>
+</div>
+</div>
+</div>
+<div class="space-y-1">
+<label class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant block">Meta Description (SEO &amp; OpenGraph Ledger)</label>
+<textarea class="w-full bg-surface-container-low p-space-sm font-body-md text-body-md text-primary focus:outline-none focus:bg-surface-container transition-colors" rows="2">TÈSSILE Atelier operates at the intersection of Japanese loom restraint and Northern Italian tailoring precision. We curate virgin wools, raw Belgian silks, and bespoke bespoke cuts.</textarea>
+<p class="font-label-tabular text-[11px] text-on-surface-variant">Recommended length: 155 characters. Currently 184 characters.</p>
+</div>
+</div>
+<!-- Blocks Orchestration Stack -->
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant">Active Block Sequence</span>
+<span class="font-label-tabular text-[11px] px-1.5 py-0.5 bg-surface-container-highest text-primary">Drag to reorder</span>
+</div>
+<span class="font-label-tabular text-body-sm text-on-surface-variant">4 Content Units Rendered</span>
+</div>
+<!-- Block 01: Hero Manifesto Block -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm space-y-space-md group">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant cursor-grab">drag_indicator</span>
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-secondary">Block 01 • Hero Manifesto</span>
+</div>
+<div class="flex items-center gap-1 opacity-60 group-hover:opacity-100 transition-opacity">
+<button class="p-1 text-on-surface-variant hover:text-primary transition-colors" title="Move Up"><span class="material-symbols-outlined text-[16px]">arrow_upward</span></button>
+<button class="p-1 text-on-surface-variant hover:text-primary transition-colors" title="Move Down"><span class="material-symbols-outlined text-[16px]">arrow_downward</span></button>
+<button class="p-1 text-on-surface-variant hover:text-error transition-colors" title="Delete Block"><span class="material-symbols-outlined text-[16px]">delete</span></button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<div class="md:col-span-8 space-y-space-sm">
+<div class="space-y-1">
+<label class="font-label-eyebrow text-[10px] uppercase text-on-surface-variant block">Manifesto Heading</label>
+<input class="w-full bg-surface-container-low px-3 py-1.5 font-headline-sm text-headline-sm text-primary focus:outline-none" type="text" value="Preserving the Tactile Discipline"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-eyebrow text-[10px] uppercase text-on-surface-variant block">Manifesto Body Copy</label>
+<textarea class="w-full bg-surface-container-low p-3 font-body-md text-body-md text-primary focus:outline-none" rows="3">Founded on the principle that a garment holds only as much dignity as the grain of its raw fiber. We forgo artificial stabilization in favor of cold-water shrinkage and hand-ironed canvas drape.</textarea>
+</div>
+</div>
+<div class="md:col-span-4 bg-surface-container-low p-space-sm flex flex-col justify-between">
+<div class="space-y-1">
+<span class="font-label-eyebrow text-[10px] uppercase text-on-surface-variant">Visual Accent</span>
+<p class="font-body-sm text-body-sm text-on-surface">Minimalist Full Bleed Overlay with Gold Leaf Serif Drop-cap.</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-tabular text-[11px] text-on-surface-variant">Align: Centered</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">format_align_center</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Block 02: Editorial Essay Block -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm space-y-space-md group">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant cursor-grab">drag_indicator</span>
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-secondary">Block 02 • Editorial Essay</span>
+</div>
+<div class="flex items-center gap-1 opacity-60 group-hover:opacity-100 transition-opacity">
+<button class="p-1 text-on-surface-variant hover:text-primary transition-colors" title="Move Up"><span class="material-symbols-outlined text-[16px]">arrow_upward</span></button>
+<button class="p-1 text-on-surface-variant hover:text-primary transition-colors" title="Move Down"><span class="material-symbols-outlined text-[16px]">arrow_downward</span></button>
+<button class="p-1 text-on-surface-variant hover:text-error transition-colors" title="Delete Block"><span class="material-symbols-outlined text-[16px]">delete</span></button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<div class="md:col-span-7 space-y-space-sm">
+<div class="space-y-1">
+<label class="font-label-eyebrow text-[10px] uppercase text-on-surface-variant block">Essay Title &amp; Chapter</label>
+<input class="w-full bg-surface-container-low px-3 py-1.5 font-title-lg text-title-lg text-primary focus:outline-none" type="text" value="I. The Rejection of Synthetic Blends"/>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="space-y-1">
+<label class="font-label-eyebrow text-[10px] uppercase text-on-surface-variant block">Author Byline</label>
+<input class="w-full bg-surface-container-low px-2 py-1 font-body-sm text-body-sm text-primary focus:outline-none" type="text" value="Giancarlo Conti"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-eyebrow text-[10px] uppercase text-on-surface-variant block">Role / Discipline</label>
+<input class="w-full bg-surface-container-low px-2 py-1 font-body-sm text-body-sm text-primary focus:outline-none" type="text" value="Master Cutter, Milan"/>
+</div>
+</div>
+<div class="space-y-1">
+<label class="font-label-eyebrow text-[10px] uppercase text-on-surface-variant block">Prose Excerpt</label>
+<textarea class="w-full bg-surface-container-low p-2 font-body-sm text-body-sm text-primary focus:outline-none" rows="2">The touch test remains infallible: synthetic poly-filaments heat too quickly under palm pressure and refuse the breath of human skin...</textarea>
+</div>
+</div>
+<!-- Image Asset Preview -->
+<div class="md:col-span-5 flex flex-col justify-between">
+<div class="relative w-full h-36 bg-surface-container overflow-hidden group/img">
+<img class="w-full h-full object-cover" data-alt="Close up architectural capture of a master tailor cutting table in Milan with shears, untreated cedar wood, chalk markings on raw unbleached linen in quiet diffuse morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCE-HOFqxz5ufxR8NdftVLsHNeLhL_KcSg1bVSLQuxlt47xzcPWLlevSD6WIZFKYP7XR1WN7I0DPdaPxK1p_sQNU_fNTr3EeW8iPyvGWRdm_qxNYZBa87ls-az5VLrc8Da77l7JfevV6jxahE9gKD61-vYu9nOsd_1cZ2FDNcaa7BfN7Ew8Aix4nmVySe9KhOyMvMvsYwtkm8Z5ja-0PIzTcW9VRPlvsUqkF0SkN9KLTUKMkXfZZxm"/>
+<div class="absolute bottom-2 left-2 bg-primary/80 backdrop-blur-sm px-2 py-0.5 text-on-primary font-label-eyebrow text-[9px] uppercase tracking-wider">
+                  bench-shears-milan.webp
+                </div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-tabular text-[11px] text-on-surface-variant">Aspect: 16:9 Architectural</span>
+<button class="font-label-eyebrow text-[10px] text-secondary hover:underline uppercase">Replace Asset</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Block 03: Provenance Matrix Block -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm space-y-space-md group">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant cursor-grab">drag_indicator</span>
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-secondary">Block 03 • Provenance Matrix</span>
+</div>
+<div class="flex items-center gap-1 opacity-60 group-hover:opacity-100 transition-opacity">
+<button class="p-1 text-on-surface-variant hover:text-primary transition-colors" title="Move Up"><span class="material-symbols-outlined text-[16px]">arrow_upward</span></button>
+<button class="p-1 text-on-surface-variant hover:text-primary transition-colors" title="Move Down"><span class="material-symbols-outlined text-[16px]">arrow_downward</span></button>
+<button class="p-1 text-on-surface-variant hover:text-error transition-colors" title="Delete Block"><span class="material-symbols-outlined text-[16px]">delete</span></button>
+</div>
+</div>
+<div class="space-y-space-sm">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm">
+<div class="p-space-sm bg-surface-container-low space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-[10px] uppercase text-secondary">Node 01</span>
+<span class="font-label-tabular text-[10px] text-on-surface-variant">Woolens</span>
+</div>
+<p class="font-title-lg text-title-lg text-primary">Biella, IT</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Alpine glacial water wash</p>
+</div>
+<div class="p-space-sm bg-surface-container-low space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-[10px] uppercase text-secondary">Node 02</span>
+<span class="font-label-tabular text-[10px] text-on-surface-variant">Linens</span>
+</div>
+<p class="font-title-lg text-title-lg text-primary">Belfast, UK</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Heavy-duty cambric flax</p>
+</div>
+<div class="p-space-sm bg-surface-container-low space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-[10px] uppercase text-secondary">Node 03</span>
+<span class="font-label-tabular text-[10px] text-on-surface-variant">Flax</span>
+</div>
+<p class="font-title-lg text-title-lg text-primary">Normandy, FR</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Naturally dew-retted stalks</p>
+</div>
+<div class="p-space-sm bg-surface-container-low space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-[10px] uppercase text-secondary">Node 04</span>
+<span class="font-label-tabular text-[10px] text-on-surface-variant">Denim/Selvage</span>
+</div>
+<p class="font-title-lg text-title-lg text-primary">Okayama, JP</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Toyoda shuttle loom slow weave</p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-tabular text-[11px] text-on-surface-variant">Interactive Hover Pin Overlay: Active</span>
+<button class="font-label-eyebrow text-[10px] text-secondary hover:underline uppercase">+ Add Provenance Coordinate</button>
+</div>
+</div>
+</div>
+<!-- Block 04: Workshop Location Cards -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm space-y-space-md group">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant cursor-grab">drag_indicator</span>
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-[0.2em] text-secondary">Block 04 • Workshop Locations</span>
+</div>
+<div class="flex items-center gap-1 opacity-60 group-hover:opacity-100 transition-opacity">
+<button class="p-1 text-on-surface-variant hover:text-primary transition-colors" title="Move Up"><span class="material-symbols-outlined text-[16px]">arrow_upward</span></button>
+<button class="p-1 text-on-surface-variant hover:text-primary transition-colors" title="Move Down"><span class="material-symbols-outlined text-[16px]">arrow_downward</span></button>
+<button class="p-1 text-on-surface-variant hover:text-error transition-colors" title="Delete Block"><span class="material-symbols-outlined text-[16px]">delete</span></button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Milan Workshop -->
+<div class="p-space-sm bg-surface-container-low space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-title-lg text-title-lg text-primary">Milan Cutting Floor #01</span>
+<span class="font-label-eyebrow text-[9px] uppercase px-1.5 py-0.5 bg-surface-container-highest text-primary">Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Via Sant'Andrea 14, Quadrilatero della Moda, 20121 Milano MI</p>
+<div class="flex items-center justify-between pt-1 text-[11px] font-label-tabular text-on-surface-variant">
+<span>Direct Line: +39 02 8901 4410</span>
+<span>Visits by Referral</span>
+</div>
+</div>
+<!-- Kyoto Workshop -->
+<div class="p-space-sm bg-surface-container-low space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-title-lg text-title-lg text-primary">Kyoto Notion Depot #02</span>
+<span class="font-label-eyebrow text-[9px] uppercase px-1.5 py-0.5 bg-surface-container-highest text-primary">Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kamigyo Ward, Teramachi-dori, Kyoto 602-0823, Japan</p>
+<div class="flex items-center justify-between pt-1 text-[11px] font-label-tabular text-on-surface-variant">
+<span>Direct Line: +81 75 221 8930</span>
+<span>Archival Rolls</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Add Content Block Insertion Row -->
+<div class="p-space-md bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">add_circle</span>
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-primary">Append Content Block</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="px-space-sm py-1.5 bg-surface-container-lowest hover:bg-surface-container text-primary font-label-eyebrow text-[10px] uppercase transition-colors shadow-sm">
+              Rich Text
+            </button>
+<button class="px-space-sm py-1.5 bg-surface-container-lowest hover:bg-surface-container text-primary font-label-eyebrow text-[10px] uppercase transition-colors shadow-sm">
+              Image Gallery
+            </button>
+<button class="px-space-sm py-1.5 bg-surface-container-lowest hover:bg-surface-container text-primary font-label-eyebrow text-[10px] uppercase transition-colors shadow-sm">
+              Quote / Manifesto
+            </button>
+<button class="px-space-sm py-1.5 bg-surface-container-lowest hover:bg-surface-container text-primary font-label-eyebrow text-[10px] uppercase transition-colors shadow-sm">
+              Spec Table
+            </button>
+<button class="px-space-sm py-1.5 bg-surface-container-lowest hover:bg-surface-container text-primary font-label-eyebrow text-[10px] uppercase transition-colors shadow-sm">
+              Accordion FAQ
+            </button>
+</div>
+</div>
+</div>
+</main>
+</div>
+<!-- Bottom Configuration Modules (Tab 2/3 Preview — Settings & Tax Engines) -->
+<section class="mt-space-xl pt-space-xl space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="space-y-1">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant">Underlying Atelier Systems</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Tax Engine, Logistical Matrices &amp; Guild Allowances</h2>
+</div>
+<span class="font-label-tabular text-body-sm text-secondary">Synchronized to Core DB</span>
+</div>
+<!-- 3 Configuration Module Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Card 1: Pricing & Tax Engine -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm space-y-space-md flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary">Pricing::taxFor()</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">account_balance</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary">Automated Tax Matching</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Deterministic fiscal rules executed prior to card transmittal tokenization.</p>
+<div class="space-y-space-sm pt-2">
+<div class="p-2.5 bg-surface-container-low space-y-0.5">
+<div class="flex justify-between items-center">
+<span class="font-label-eyebrow text-[10px] uppercase text-primary">EU Intra-Community</span>
+<span class="font-label-tabular text-[11px] font-medium text-secondary">0% Rev. Charge</span>
+</div>
+<p class="font-label-tabular text-[11px] text-on-surface-variant">Validated via VIES endpoint with strict UID checking.</p>
+</div>
+<div class="p-2.5 bg-surface-container-low space-y-0.5">
+<div class="flex justify-between items-center">
+<span class="font-label-eyebrow text-[10px] uppercase text-primary">UK Domestic</span>
+<span class="font-label-tabular text-[11px] font-medium text-primary">20.0% Std VAT</span>
+</div>
+<p class="font-label-tabular text-[11px] text-on-surface-variant">HMRC DDP carrier collected; VAT breakdown lineated.</p>
+</div>
+<div class="p-2.5 bg-surface-container-low space-y-0.5">
+<div class="flex justify-between items-center">
+<span class="font-label-eyebrow text-[10px] uppercase text-primary">US / International</span>
+<span class="font-label-tabular text-[11px] font-medium text-secondary">0% Section 321</span>
+</div>
+<p class="font-label-tabular text-[11px] text-on-surface-variant">De Minimis cleared under $800.00 declared value.</p>
+</div>
+</div>
+</div>
+<button class="w-full py-2 bg-surface-container hover:bg-surface-container-high text-primary font-label-eyebrow text-[10px] uppercase transition-colors">
+          Configure Fiscal Tiers
+        </button>
+</div>
+<!-- Card 2: Shipping Tier & Threshold Matrix -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm space-y-space-md flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary">Carrier Matrix</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">local_shipping</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary">Shipping &amp; Custody Tiers</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Automated assignment for roll lengths and bespoke crating.</p>
+<div class="space-y-space-sm pt-2">
+<div class="p-2.5 bg-surface-container-low flex justify-between items-center">
+<div>
+<p class="font-label-eyebrow text-[10px] uppercase text-primary">Complimentary Courier</p>
+<p class="font-label-tabular text-[11px] text-on-surface-variant">Applies automatically on checkout</p>
+</div>
+<span class="font-label-tabular text-body-md font-semibold text-primary">€120.00</span>
+</div>
+<div class="p-2.5 bg-surface-container-low flex justify-between items-center">
+<div>
+<p class="font-label-eyebrow text-[10px] uppercase text-primary">Standard White-Glove</p>
+<p class="font-label-tabular text-[11px] text-on-surface-variant">DHL Express Air, carbon-neutral</p>
+</div>
+<span class="font-label-tabular text-body-md font-semibold text-primary">€18.00</span>
+</div>
+<div class="p-2.5 bg-surface-container-low flex justify-between items-center">
+<div>
+<p class="font-label-eyebrow text-[10px] uppercase text-primary">Rigid Core Surcharge</p>
+<p class="font-label-tabular text-[11px] text-on-surface-variant">Fabric bolts &gt; 2.0m width</p>
+</div>
+<span class="font-label-tabular text-[12px] text-secondary font-medium">€0.00 (Atelier absorbed)</span>
+</div>
+</div>
+</div>
+<button class="w-full py-2 bg-surface-container hover:bg-surface-container-high text-primary font-label-eyebrow text-[10px] uppercase transition-colors">
+          Adjust Dimensions &amp; Hubs
+        </button>
+</div>
+<!-- Card 3: Active Coupon & Guild Allowances -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm space-y-space-md flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary">Guild Allowances</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">confirmation_number</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary">Active Promotions</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Private guild passes for bespoke tailors and academic archives.</p>
+<div class="p-space-sm bg-surface-container-low space-y-space-sm mt-2">
+<div class="flex justify-between items-start">
+<div>
+<span class="font-label-tabular text-[13px] font-semibold tracking-wider text-primary">SAVILE-ROW-2025</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">10% Percentage Discount</p>
+</div>
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container font-label-eyebrow text-[9px] uppercase">
+                Active
+              </span>
+</div>
+<!-- Redemption Progress Ring / Bar -->
+<div class="space-y-1">
+<div class="flex justify-between text-[11px] font-label-tabular text-on-surface-variant">
+<span>Allocated Redemptions</span>
+<span class="font-medium text-primary">48 / 200</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[24%]"></div>
+</div>
+</div>
+<div class="flex justify-between items-center text-[11px] font-label-tabular text-on-surface-variant pt-1">
+<span>Valid Thru: Dec 31, 2025</span>
+<span>Min. Order: €350</span>
+</div>
+</div>
+</div>
+<button class="w-full py-2 bg-surface-container hover:bg-surface-container-high text-primary font-label-eyebrow text-[10px] uppercase transition-colors">
+          Issue Bespoke Pass
+        </button>
+</div>
+</div>
+</section>
+<!-- Interactive Feedback Overlay Modal / Notification Toast (Client-side interactive) -->
+<div class="fixed bottom-6 right-6 bg-primary text-on-primary px-space-md py-space-sm shadow-xl flex items-center gap-space-sm transition-all duration-300 opacity-0 translate-y-4 pointer-events-none z-50" id="toast-notification">
+<span class="material-symbols-outlined text-secondary text-[20px]" id="toast-icon">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-tabular text-body-sm font-medium" id="toast-title">Settings Saved</span>
+<span class="font-label-tabular text-[11px] text-on-primary-container" id="toast-desc">Configuration written to canonical store.</span>
+</div>
+</div>
+</div>
+<script>
+  (function initCmsEditor() {
+    const saveBtn = document.getElementById('btn-save-all');
+    const purgeBtn = document.getElementById('btn-purge-cache');
+    const toast = document.getElementById('toast-notification');
+    const toastTitle = document.getElementById('toast-title');
+    const toastDesc = document.getElementById('toast-desc');
+    const toastIcon = document.getElementById('toast-icon');
+
+    function triggerToast(title, desc, iconName) {
+      if (!toast) return;
+      toastTitle.textContent = title;
+      toastDesc.textContent = desc;
+      toastIcon.textContent = iconName;
+      toast.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+      toast.classList.add('opacity-100', 'translate-y-0');
+
+      setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+      }, 3500);
+    }
+
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        triggerToast('Canonical Configuration Synchronized', 'All 4 modules and page content blocks compiled to edge cache.', 'verified');
+      });
+    }
+
+    if (purgeBtn) {
+      purgeBtn.addEventListener('click', () => {
+        triggerToast('Redis Edge Cache Evicted', 'Warm purge broadcasted across 42 POPs. Latency re-measured at 0.04ms.', 'cached');
+      });
+    }
+
+    // Interactive directory list selection feedback
+    const dirItems = document.querySelectorAll('#page-directory-list > div');
+    dirItems.forEach(item => {
+      item.addEventListener('click', () => {
+        dirItems.forEach(el => el.classList.remove('bg-surface-container-low'));
+        item.classList.add('bg-surface-container-low');
+      });
+    });
+
+    // Tab buttons active states
+    const tabs = document.querySelectorAll('.cms-nav-tab');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => {
+          t.classList.remove('text-primary', 'font-semibold');
+          t.classList.add('text-on-surface-variant');
+        });
+        tab.classList.add('text-primary', 'font-semibold');
+        tab.classList.remove('text-on-surface-variant');
+      });
+    });
+  })();
+</script></main></div></body></html>

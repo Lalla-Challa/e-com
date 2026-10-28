@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Hanken+Grotesk:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"background":"#f9f9f6","on-primary-container":"#858383","on-secondary":"#ffffff","primary-fixed-dim":"#c8c6c5","on-tertiary-fixed":"#1b1c18","on-primary-fixed-variant":"#474746","inverse-primary":"#c8c6c5","on-error":"#ffffff","secondary-fixed-dim":"#e3c193","surface-tint":"#5f5e5e","on-error-container":"#93000a","outline-variant":"#c4c7c7","on-tertiary-fixed-variant":"#474743","surface-container-high":"#e8e8e5","on-tertiary":"#ffffff","surface-dim":"#dadad7","tertiary":"#000000","on-secondary-fixed-variant":"#5a431f","outline":"#747878","secondary-container":"#fedaaa","surface-container-highest":"#e2e3e0","on-tertiary-container":"#85847f","on-primary-fixed":"#1c1b1b","on-surface":"#1a1c1b","on-surface-variant":"#444748","on-secondary-fixed":"#291800","surface-variant":"#e2e3e0","error-container":"#ffdad6","surface-container-low":"#f4f4f1","primary":"#000000","tertiary-fixed":"#e4e2dc","tertiary-fixed-dim":"#c8c6c1","primary-container":"#1c1b1b","secondary":"#745a34","tertiary-container":"#1b1c18","surface-bright":"#f9f9f6","error":"#ba1a1a","on-secondary-container":"#795e38","primary-fixed":"#e5e2e1","inverse-surface":"#2f312f","surface-container-lowest":"#ffffff","inverse-on-surface":"#f1f1ee","secondary-fixed":"#ffddb1","on-primary":"#ffffff","surface":"#f9f9f6","on-background":"#1a1c1b","surface-container":"#eeeeeb"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-sm":"0.5rem","space-lg":"2rem","margin":"4rem","space-md":"1rem","gutter":"1.5rem","space-xs":"0.25rem","margin-mobile":"1.25rem","gutter-mobile":"1rem","space-xl":"4rem"},fontFamily:{"display-md":["EB Garamond"],"title-lg":["EB Garamond"],"body-sm":["Hanken Grotesk"],"display-md-mobile":["EB Garamond"],"display-lg":["EB Garamond"],"label-eyebrow":["Hanken Grotesk"],"display-lg-mobile":["EB Garamond"],"body-md":["Hanken Grotesk"],"headline-sm":["EB Garamond"],"body-lg":["Hanken Grotesk"],"label-tabular":["Hanken Grotesk"]},fontSize:{"display-md":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.01em","fontWeight":"400"}],"title-lg":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"0.01em","fontWeight":"400"}],"body-sm":["0.8125rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"400"}],"display-md-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"0em","fontWeight":"400"}],"display-lg":["3.5rem",{"lineHeight":"4rem","letterSpacing":"-0.015em","fontWeight":"400"}],"label-eyebrow":["0.6875rem",{"lineHeight":"1rem","letterSpacing":"0.2em","fontWeight":"500"}],"display-lg-mobile":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.01em","fontWeight":"400"}],"body-md":["0.9375rem",{"lineHeight":"1.5rem","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"0em","fontWeight":"400"}],"body-lg":["1.0625rem",{"lineHeight":"1.75rem","letterSpacing":"-0.005em","fontWeight":"400"}],"label-tabular":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.02em","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col pt-8 pb-8"><div class="px-8 mb-12 flex flex-col gap-space-xs"><span class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant">CLIENT PORTAL</span><span class="font-title-lg text-title-lg text-on-surface tracking-tight">Atelier Ledger</span></div><nav class="flex-1 px-4 flex flex-col gap-space-xs" data-active-classes="bg-surface-container-high text-on-surface font-medium"><a aria-current="page" class="flex items-center px-4 py-3 transition-colors bg-surface-container-high text-on-surface font-medium" data-path="account" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">person</span>Profile &amp; Measurements</a><a class="flex items-center px-4 py-3 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="order-tracking" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">history_edu</span>Order Tracking &amp; Status</a><a class="flex items-center px-4 py-3 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="saved-swatches" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">palette</span>Archived Swatches</a><a class="flex items-center px-4 py-3 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="fittings" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">calendar_today</span>Private Appointments</a></nav><div class="px-8 pt-space-lg"><a class="flex items-center text-on-surface-variant hover:text-on-surface transition-colors font-label-eyebrow text-label-eyebrow uppercase" data-path="textiles-and-cloth" href="#"><span class="material-symbols-outlined mr-2 text-[16px]">arrow_back</span>Return to Catalog</a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-background/90 backdrop-blur-md z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><img alt="Brand logo. - Primary color: #1a1a1a
+- Font: ebGaramond
+- Mode: light
+- Roundness: rounded-lg
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X3kTNj1h3qzEe6SluENtp9S59IjKiEXr3zoP5AFxEJQKwa39q2hn3JzRrJS-pemKnGjTkxZsW93YhV2NCp_upX4NKC6uiNpMedhPynbDQv4ev3CskqYpbmiMmUXNtP_qm3KCZ0xaHqN14hHREhgGJVn2tm0RAZzEAgFDpn_rVbFXGlI63W3ifw2uwZFZk2KHcoY1-t8VaPUt7UyZJ7SqpIkoAdLv6sJxRyGTkBfPQ5K5jnI5Pb5XO4HQ"/><span class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-[0.2em]">TÈSSILE Atelier</span></div><div class="flex items-center gap-space-lg"><a class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="textiles-and-cloth" href="#">CATALOG</a><a class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="bag" href="#">BAG (3)</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-20 bg-background min-h-screen px-space-lg py-space-lg"><div class="flex flex-col w-full">
+<div class="grid grid-cols-12 gap-gutter w-full max-w-[1440px] mx-auto pb-space-xl">
+<!-- Persistent Customer Account Sub-Navigation -->
+<aside class="col-span-12 lg:col-span-3 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest p-space-md flex flex-col gap-space-sm shadow-sm">
+<div class="px-space-sm py-space-xs mb-space-xs">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant tracking-widest block">Client Profile</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Lord Julian Vance</span>
+<span class="font-body-sm text-body-sm text-secondary block mt-0.5">Tier: Patron d'Atelier #882</span>
+</div>
+<nav class="flex flex-col gap-1 text-on-surface">
+<a class="flex items-center justify-between px-space-sm py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-body-sm text-body-sm" href="#">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px]">dashboard</span>
+<span>Overview</span>
+</span>
+</a>
+<a class="flex items-center justify-between px-space-sm py-2.5 bg-surface-container text-on-surface font-body-sm text-body-sm font-medium" href="#">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+<span>Orders &amp; Cuts</span>
+</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</a>
+<a class="flex items-center justify-between px-space-sm py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-body-sm text-body-sm" href="#">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<span>Saved Addresses</span>
+</span>
+</a>
+<a class="flex items-center justify-between px-space-sm py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-body-sm text-body-sm" href="#">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+<span>Archived Wishlist</span>
+</span>
+<span class="font-label-tabular text-label-tabular text-on-surface-variant">7</span>
+</a>
+<a class="flex items-center justify-between px-space-sm py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-body-sm text-body-sm" href="#">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px]">straighten</span>
+<span>Tailor Profile &amp; Preferences</span>
+</span>
+</a>
+<a class="flex items-center justify-between px-space-sm py-2.5 text-error/80 hover:text-error hover:bg-error-container/20 transition-colors font-body-sm text-body-sm mt-space-md" href="#">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px]">logout</span>
+<span>Sign Out</span>
+</span>
+</a>
+</nav>
+</div>
+<!-- Atelier Concierge Assistance Card -->
+<div class="bg-surface-container-low p-space-md flex flex-col gap-space-sm shadow-sm">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary">Dedicated Clothier</span>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-display-md text-title-lg text-on-surface">
+            M
+          </div>
+<div class="flex flex-col">
+<span class="font-title-lg text-title-lg leading-tight text-on-surface">Matteo Bellini</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Milan Cutting Room Lead</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+          Assigned to bolt inspections, continuous grainline certification, and bespoke freight dispatch.
+        </p>
+<button class="mt-2 text-left font-label-eyebrow text-label-eyebrow uppercase tracking-widest text-primary hover:text-secondary transition-colors underline underline-offset-4" type="button">
+          Direct Line: +39 02 8901 4410
+        </button>
+</div>
+</aside>
+<!-- Main Order Details Canvas -->
+<main class="col-span-12 lg:col-span-9 flex flex-col gap-space-lg">
+<!-- Top Navigation & Heading Bar -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<a class="inline-flex items-center gap-2 font-label-eyebrow text-label-eyebrow uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px]">arrow_left_alt</span>
+<span>Return to Order History</span>
+</a>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-secondary-container text-on-secondary-container font-label-eyebrow text-label-eyebrow uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+              En Route
+            </span>
+</div>
+</div>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-sm">
+<div>
+<div class="flex items-baseline gap-3">
+<h1 class="font-display-md text-display-md text-on-surface tracking-tight">TL-2025-8849</h1>
+<span class="font-label-tabular text-label-tabular text-on-surface-variant">Archival Cut Ledger</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-4 gap-y-1 mt-1 font-body-sm text-body-sm text-on-surface-variant">
+<span>Placed on 14 October 2024</span>
+<span>•</span>
+<span>Dispatched via DHL Express (<span class="font-label-tabular text-on-surface">#9401 2028 9481</span>)</span>
+<span>•</span>
+<span>Weight: 2.85 kg Net</span>
+</div>
+</div>
+<!-- Action Buttons Group -->
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-4 py-2 bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-eyebrow text-label-eyebrow uppercase tracking-wider flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>VAT Invoice</span>
+</button>
+<button class="px-4 py-2 bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-eyebrow text-label-eyebrow uppercase tracking-wider flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[16px]">content_cut</span>
+<span>Swatch Remnant</span>
+</button>
+<button class="px-4 py-2 bg-primary text-on-primary hover:bg-surface-container-highest hover:text-on-surface transition-colors font-label-eyebrow text-label-eyebrow uppercase tracking-wider flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[16px]">refresh</span>
+<span>Reorder Materials</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Status Stepper Card -->
+<section class="bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-space-lg gap-2">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant tracking-widest block">Consignment Progress</span>
+<span class="font-title-lg text-title-lg text-on-surface">Chain of Custody &amp; Preparation</span>
+</div>
+<span class="font-label-tabular text-label-tabular text-on-surface-variant">Estimated Delivery: 18 Oct 2024, by 12:00 BST</span>
+</div>
+<div class="relative w-full">
+<!-- Background connector line -->
+<div class="hidden md:block absolute top-4 left-6 right-6 h-0.5 bg-surface-container-high"></div>
+<!-- Filled active connector line -->
+<div class="hidden md:block absolute top-4 left-6 w-[75%] h-0.5 bg-primary"></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative z-10">
+<!-- Step 1 -->
+<div class="flex md:flex-col items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">done</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-lg text-title-lg text-on-surface">Order Received</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">14 Oct, 08:30 CET</span>
+<span class="font-label-tabular text-label-tabular text-on-surface-variant mt-1">Order Logged</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex md:flex-col items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">done</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-lg text-title-lg text-on-surface">Cut &amp; Measured</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">15 Oct, 10:15 CET</span>
+<span class="font-label-tabular text-label-tabular text-on-surface-variant mt-1">Bolt #24-D Inspected</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex md:flex-col items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">done</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-lg text-title-lg text-on-surface">Rolled &amp; Sealed</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">15 Oct, 16:40 CET</span>
+<span class="font-label-tabular text-label-tabular text-on-surface-variant mt-1">Wax Seal Stamped</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex md:flex-col items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary ring-4 ring-surface-container flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-lg text-title-lg text-on-surface font-semibold">In Transit</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">16 Oct, 04:22 CET</span>
+<span class="font-label-tabular text-label-tabular text-secondary mt-1">Departed Milan Hub</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Items Ledger Table -->
+<section class="bg-surface-container-lowest shadow-sm flex flex-col">
+<div class="p-space-lg pb-space-sm flex items-center justify-between">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant tracking-widest block">Archival Manifest</span>
+<h2 class="font-title-lg text-title-lg text-on-surface">Tailoring Material Specifications</h2>
+</div>
+<span class="font-label-tabular text-label-tabular text-on-surface-variant">3 Items Allocated</span>
+</div>
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-eyebrow text-label-eyebrow uppercase tracking-widest">
+<th class="py-3 px-space-lg font-medium">Textile / Notions</th>
+<th class="py-3 px-4 font-medium">Composition &amp; Batch</th>
+<th class="py-3 px-4 font-medium text-right">Quantity</th>
+<th class="py-3 px-4 font-medium text-right">Unit Price</th>
+<th class="py-3 px-space-lg font-medium text-right">Total</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-on-surface font-body-sm text-body-sm">
+<!-- Item 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-md">
+<img class="w-16 h-20 object-cover shadow-sm bg-surface-container" data-alt="High-resolution tactile macro close-up of Terre Cuite terracotta washed heavy linen fabric showing open textured weave, natural slubs, and soft linen fibers under diffused atelier daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLMrfD7wAAebwBkZgMXREgiykKmyioeUpjogVPriS2Boclej1lby3rtttmHnXzukHwEsPtFpGHEY0AbarJIToluVZ0wNBdKqrsBqMrHaMlNsgE3ZMUPJR_QwKoSUeVE3tj5iOgGie8o6ftyGUcR8TIXAy61XSv3i7CXRGa0ZsrxzXxf8rFHcpQnMru4wlMjNRGeRiQCYieph20rCGi5rlsmyn1FHwV0pt_opJXzXKXctfk14oSqXa7"/>
+<div class="flex flex-col">
+<span class="font-title-lg text-title-lg text-on-surface">Normandy Washed Heavy Linen</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Color: Terre Cuite (Warm Rust)</span>
+<span class="font-label-eyebrow text-[10px] text-secondary uppercase tracking-widest mt-1">420 g/m² • Flax Pure</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-4 align-top">
+<div class="flex flex-col">
+<span class="font-label-tabular text-label-tabular text-on-surface">Batch #24-D</span>
+<span class="text-on-surface-variant text-xs">Yarn-dyed French flax</span>
+<span class="text-on-surface-variant text-xs mt-1">Selvage: Intact (Stamped)</span>
+</div>
+</td>
+<td class="py-space-md px-4 text-right align-top font-label-tabular text-label-tabular">
+                  3.0 m
+                </td>
+<td class="py-space-md px-4 text-right align-top font-label-tabular text-label-tabular">
+                  €38.00/m
+                </td>
+<td class="py-space-md px-space-lg text-right align-top font-label-tabular text-label-tabular font-medium">
+                  €114.00
+                </td>
+</tr>
+<!-- Item 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-md">
+<img class="w-16 h-20 object-cover shadow-sm bg-surface-container" data-alt="Close up photograph of Charcoal Melange Biella worsted wool flannel suiting cloth displaying subtle grey heathered fiber variations, crisp drape, and fine bespoke textile grain." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjcoFBLooY12_SdeS01f5XtVDUc201f7J5Fyf90gx59gwdwZH8URBNK-FJJvlrtNs4czyA3mVWgYOd5IEO2gkt-EQh1JzFxHO-ey5sYnE23xz4Gd2KKqjgBBx7RhWTXaQhCUT3_t4JgNwDev6HVWAKBCKM6oFbCxUYI3dSyRTo-ouC6kCqCaPsnpe0tp5VaBi5g8GfYtfXOZ2CZ4c5oYTSzYCq9tD6QZRBEWvwPRjlU7pAXLdqw82U"/>
+<div class="flex flex-col">
+<span class="font-title-lg text-title-lg text-on-surface">Biella Wool Worsted Flannel</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Color: Charcoal Melange</span>
+<span class="font-label-eyebrow text-[10px] text-secondary uppercase tracking-widest mt-1">Super 130s • 310 g/m²</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-4 align-top">
+<div class="flex flex-col">
+<span class="font-label-tabular text-label-tabular text-on-surface">Batch #19-B</span>
+<span class="text-on-surface-variant text-xs">Piedmont Mills Mill-finish</span>
+<span class="text-on-surface-variant text-xs mt-1">Grainline: Basted guide</span>
+</div>
+</td>
+<td class="py-space-md px-4 text-right align-top font-label-tabular text-label-tabular">
+                  2.5 m
+                </td>
+<td class="py-space-md px-4 text-right align-top font-label-tabular text-label-tabular">
+                  €68.00/m
+                </td>
+<td class="py-space-md px-space-lg text-right align-top font-label-tabular text-label-tabular font-medium">
+                  €170.00
+                </td>
+</tr>
+<!-- Item 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-md">
+<img class="w-16 h-20 object-cover shadow-sm bg-surface-container" data-alt="Minimalist studio still life of dark mottled genuine matte buffalo horn suit buttons resting on unbleached cloth with four hand-drilled holes visible under soft directional light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQRVR-mGKtDbPZZwTffMMuqg_QEWy5jKU31Ngmbk2E16HFxCyjrWUwV71g5osleVbki-AVtPliXgl4_9cQiSRRG09lHsxrRjpnYh_MvyszfRHJPaAOIkhj4D76x6K5CksHmpCS3Oc5P1Lb6xJr3s0trNpR8_EDADjDuNG-EBRuscvHgnoaGobBbIwItqGeLUZLBb-ga08NOcTptL_UPgvQ3lwNSS4zoWo5n6QxxPiMMoVi2dOOd8Zd"/>
+<div class="flex flex-col">
+<span class="font-title-lg text-title-lg text-on-surface">Matte Buffalo Horn Buttons</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tone: Dark Mottled (Natural Grain)</span>
+<span class="font-label-eyebrow text-[10px] text-secondary uppercase tracking-widest mt-1">32L (4 pcs) &amp; 24L (10 pcs)</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-4 align-top">
+<div class="flex flex-col">
+<span class="font-label-tabular text-label-tabular text-on-surface">Batch #Notion-02</span>
+<span class="text-on-surface-variant text-xs">Hand-turned Water Buffalo</span>
+<span class="text-on-surface-variant text-xs mt-1">Pouch: Waxed Parchment</span>
+</div>
+</td>
+<td class="py-space-md px-4 text-right align-top font-label-tabular text-label-tabular">
+                  1 set (14 pcs)
+                </td>
+<td class="py-space-md px-4 text-right align-top font-label-tabular text-label-tabular">
+                  €28.00
+                </td>
+<td class="py-space-md px-space-lg text-right align-top font-label-tabular text-label-tabular font-medium">
+                  €28.00
+                </td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Ledger Breakdown Panel -->
+<div class="bg-surface-container-low p-space-lg flex flex-col md:flex-row justify-between items-start md:items-end gap-space-md">
+<div class="flex flex-col gap-1 max-w-sm">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant">Fabric Certificate</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              All lengths rolled around acid-free archival cardboard cores to prevent pressure creasing. Hand-inspected with certified loom selvages.
+            </p>
+</div>
+<div class="w-full md:w-80 flex flex-col gap-2">
+<div class="flex justify-between items-center text-body-sm font-body-sm text-on-surface-variant">
+<span>Materials Subtotal</span>
+<span class="font-label-tabular text-label-tabular text-on-surface">€312.00</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm text-on-surface-variant">
+<span>Atelier Insured Courier</span>
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-wider text-secondary">Complimentary</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm text-on-surface-variant">
+<span>Value Added Tax (20%)</span>
+<span class="font-label-tabular text-label-tabular text-on-surface">Included</span>
+</div>
+<div class="pt-3 mt-1 flex justify-between items-baseline bg-surface-container-high/50 p-2">
+<span class="font-title-lg text-title-lg text-on-surface font-semibold">Total Settled</span>
+<span class="font-display-md text-headline-sm text-on-surface font-medium">€312.00</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Customer Order Notes Thread (Interactive API Report Feature) -->
+<section class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row justify-between md:items-center gap-2">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">mark_chat_read</span>
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant tracking-widest">Chronological Atelier Ledger</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Cutting Protocol &amp; Tailor Enquiry Thread</h2>
+</div>
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-widest text-on-surface-variant">Encrypted Direct Exchange</span>
+</div>
+<!-- Notes Stream Container -->
+<div class="flex flex-col gap-space-md pt-2" id="notesContainer">
+<!-- Note 1 (Client) -->
+<div class="flex gap-4 items-start">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center shrink-0 font-label-eyebrow text-xs">
+              JV
+            </div>
+<div class="flex-1 bg-surface-container-low p-4 shadow-sm">
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Lord Julian Vance <span class="font-label-eyebrow text-[10px] text-on-surface-variant ml-2 font-normal">CLIENT</span></span>
+<span class="font-label-tabular text-label-tabular text-on-surface-variant text-xs">14 Oct, 09:15 CET</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                "Please ensure selvage marking remains intact on both bolt cuts."
+              </p>
+</div>
+</div>
+<!-- Note 2 (Atelier Cutting Room) -->
+<div class="flex gap-4 items-start pl-6 md:pl-10">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">content_cut</span>
+</div>
+<div class="flex-1 bg-surface-container p-4 shadow-sm">
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Matteo Bellini <span class="font-label-eyebrow text-[10px] text-secondary ml-2 font-normal">ATELIER CUTTING ROOM</span></span>
+<span class="font-label-tabular text-label-tabular text-on-surface-variant text-xs">14 Oct, 11:30 CET</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                "Understood. Our master cutter has marked continuous cuts with unbleached cotton basting along grainline."
+              </p>
+</div>
+</div>
+</div>
+<!-- Interactive New Note Input -->
+<div class="pt-4">
+<form class="flex flex-col gap-3" id="noteForm">
+<div class="flex flex-col gap-1">
+<label class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant tracking-wider" for="newNoteInput">
+                Append Dispatch Instruction or Cutter Query
+              </label>
+<div class="relative bg-surface-container-low p-2">
+<textarea class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none resize-none p-2" id="newNoteInput" placeholder="Add a dispatch instruction or tailor enquiry..." rows="2"></textarea>
+</div>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-body-sm text-xs text-on-surface-variant">Messages are archived alongside bolt pedigree records.</span>
+<button class="px-6 py-2.5 bg-primary text-on-primary hover:bg-secondary transition-colors font-label-eyebrow text-label-eyebrow uppercase tracking-widest flex items-center gap-2" type="submit">
+<span>Submit Note</span>
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+</form>
+</div>
+</section>
+<!-- Bottom Details Split Cards: Delivery Address & Cutting Protocol -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Delivery Address Card -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant tracking-widest">Delivery Destination</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">local_shipping</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Private Residence</h3>
+<div class="font-body-md text-body-md text-on-surface leading-relaxed mt-1">
+<p class="font-semibold">Lord Julian Vance</p>
+<p>Old Manor House, Gatehouse Wing</p>
+<p>High Street, Chipping Campden</p>
+<p>Gloucestershire, GL55 6AT</p>
+<p class="text-on-surface-variant text-sm mt-2">United Kingdom</p>
+</div>
+</div>
+<div class="pt-4 mt-4 bg-surface-container-low p-3 flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant">Carrier Reference</span>
+<span class="font-label-tabular text-label-tabular text-on-surface font-medium">DHL EX-EU 9401 2028 9481</span>
+</div>
+</div>
+<!-- Cutting Protocol & Quality Seal Card -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant tracking-widest">Quality Assurance</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Tailor Cutting Protocol</h3>
+<ul class="font-body-sm text-body-sm text-on-surface-variant flex flex-col gap-2 mt-1">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">check_circle</span>
+<span>Moisture normalized for 48 hours at 20°C prior to bench shear.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">check_circle</span>
+<span>Dual selvage preserves mill watermark &amp; batch serial registration.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">check_circle</span>
+<span>Basted grainline marked with soft Egyptian unbleached thread.</span>
+</li>
+</ul>
+</div>
+<div class="pt-4 mt-4 bg-surface-container-low p-3 flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant">Quality Seal</span>
+<span class="font-label-tabular text-label-tabular text-secondary font-medium">CERT-MILANO-8849</span>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+<script>
+  // Micro-interaction for appending order note directly in DOM
+  const noteForm = document.getElementById('noteForm');
+  const newNoteInput = document.getElementById('newNoteInput');
+  const notesContainer = document.getElementById('notesContainer');
+
+  if (noteForm && newNoteInput && notesContainer) {
+    noteForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const text = newNoteInput.value.trim();
+      if (!text) return;
+
+      const now = new Date();
+      const hours = String(now.getHours()).padStart(2, '0');
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const timeString = `Today, ${hours}:${minutes} CET`;
+
+      const noteCard = document.createElement('div');
+      noteCard.className = 'flex gap-4 items-start';
+      noteCard.innerHTML = `
+        <div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center shrink-0 font-label-eyebrow text-xs">
+          JV
+        </div>
+        <div class="flex-1 bg-surface-container-low p-4 shadow-sm animate-fade-in">
+          <div class="flex items-baseline justify-between mb-1">
+            <span class="font-body-sm text-body-sm font-semibold text-on-surface">Lord Julian Vance <span class="font-label-eyebrow text-[10px] text-on-surface-variant ml-2 font-normal">CLIENT</span></span>
+            <span class="font-label-tabular text-label-tabular text-on-surface-variant text-xs">${timeString}</span>
+          </div>
+          <p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            "${text.replace(/"/g, '&quot;')}"
+          </p>
+        </div>
+      `;
+
+      notesContainer.appendChild(noteCard);
+      newNoteInput.value = '';
+    });
+  }
+</script></main></div></body></html>

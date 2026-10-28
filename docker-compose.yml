@@ -1,0 +1,126 @@
+services:
+  db:
+    image: mariadb:10.11
+    container_name: app_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-rootpassword}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-wordpress_db}
+      MYSQL_USER: ${MYSQL_USER:-wp_user}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-wp_password}
+    ports:
+      - "3307:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -u$$MYSQL_USER -p$$MYSQL_PASSWORD --silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  wordpress:
+    build: ./docker/wordpress-pdo
+    image: app-wp-pdo:local
+    container_name: app_wp
+    restart: always
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8081:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: ${MYSQL_USER:-wp_user}
+      WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD:-wp_password}
+      WORDPRESS_DB_NAME: ${MYSQL_DATABASE:-wordpress_db}
+      WORDPRESS_TABLE_PREFIX: ${TABLE_PREFIX:-wp_}
+      # app-core runtime configuration
+      # Defaults are for a local clone only. A real .env overrides them.
+      JWT_SECRET: ${JWT_SECRET:-local-dev-only-not-for-production-change-me}
+      CORS_ORIGIN: ${CORS_ORIGIN:-http://localhost:5173}
+      SPA_INDEX_PATH: ${SPA_INDEX_PATH:-../frontend/dist/index.html}
+      WEBHOOK_SECRET: ${WEBHOOK_SECRET:-local-dev-webhook-secret}
+      # 1 = demo logins work out of the box on a fresh machine
+      DEMO_ACCOUNTS: ${DEMO_ACCOUNTS:-1}
+    volumes:
+      - wp_core:/var/www/html
+      - ./src/plugins/app-core:/var/www/html/wp-content/plugins/app-core
+      - ./src/uploads:/var/www/html/wp-content/uploads
+      - ./src/plugins/app-core/wp-config.headless.php:/var/www/html/wp-config.php:ro
+      # Built SPA streamed by Frontend at projectRoot/src/frontend/dist.
+      # Mount the parent (not dist itself) so vite can delete+recreate dist
+      # on rebuild without invalidating the bind mount.
+      - ./src/frontend:/var/www/html/src/frontend:ro
+
+  frontend:
+    image: node:22-alpine
+    container_name: app_frontend
+    restart: always
+    working_dir: /app
+    environment:
+      VITE_API_TARGET: http://wordpress:80
+    command: sh -c "npm install --no-audit --no-fund && npm run dev -- --host 0.0.0.0"
+    volumes:
+      - ./src/frontend:/app:cached
+    ports:
+      - "5173:5173"
+    depends_on:
+      bootstrap:
+        condition: service_completed_successfully
+
+  # Runs once per start: installs WordPress, turns the store on, loads demo data.
+  bootstrap:
+    build: ./docker/wordpress-cli-pdo
+    image: app-wpcli-pdo:local
+    container_name: app_bootstrap
+    restart: "no"
+    entrypoint: ["sh", "/bootstrap/bootstrap.sh"]
+    depends_on:
+      db:
+        condition: service_healthy
+      wordpress:
+        condition: service_started
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: ${MYSQL_USER:-wp_user}
+      WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD:-wp_password}
+      WORDPRESS_DB_NAME: ${MYSQL_DATABASE:-wordpress_db}
+      WORDPRESS_TABLE_PREFIX: ${TABLE_PREFIX:-wp_}
+      DEMO_ACCOUNTS: ${DEMO_ACCOUNTS:-1}
+      JWT_SECRET: ${JWT_SECRET:-local-dev-only-not-for-production-change-me}
+    volumes:
+      - ./docker/bootstrap.sh:/bootstrap/bootstrap.sh:ro
+      - ./src/plugins/app-core:/var/www/html/wp-content/plugins/app-core
+      - ./src/uploads:/var/www/html/wp-content/uploads
+      - ./src/plugins/app-core/wp-config.headless.php:/var/www/html/wp-config.php:ro
+      - wp_core:/var/www/html
+    user: "33:33"
+
+  wpcli:
+    build: ./docker/wordpress-cli-pdo
+    image: app-wpcli-pdo:local
+    container_name: app_wpcli
+    profiles: ["tools"]
+    entrypoint: ["wp"]
+    depends_on:
+      db:
+        condition: service_healthy
+      wordpress:
+        condition: service_started
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: ${MYSQL_USER:-wp_user}
+      WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD:-wp_password}
+      WORDPRESS_DB_NAME: ${MYSQL_DATABASE:-wordpress_db}
+      WORDPRESS_TABLE_PREFIX: ${TABLE_PREFIX:-wp_}
+      DEMO_ACCOUNTS: ${DEMO_ACCOUNTS:-0}
+    volumes:
+      - ./src/plugins/app-core:/var/www/html/wp-content/plugins/app-core
+      - ./src/uploads:/var/www/html/wp-content/uploads
+      - ./src/plugins/app-core/wp-config.headless.php:/var/www/html/wp-config.php:ro
+      - wp_core:/var/www/html
+    user: "33:33"
+
+volumes:
+  db_data:
+  wp_core:
